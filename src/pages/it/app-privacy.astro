@@ -17,7 +17,7 @@ import Layout from '../../layouts/Layout.astro';
           <p class="text-xl text-zinc-400 font-medium">App Klikkr (Android & iOS)</p>
         </div>
         <div class="flex flex-wrap items-center gap-4 text-sm text-zinc-500 bg-zinc-900/50 p-4 rounded-xl border border-zinc-800/50">
-          <span>Data di entrata in vigore: 24 marzo 2026</span>
+          <span>Data di entrata in vigore: 4 ottobre 2026</span>
           <span class="hidden sm:inline">•</span>
           <a href="mailto:support@klikkr.ch" class="hover:text-emerald-400 transition-colors">support@klikkr.ch</a>
         </div>
@@ -68,19 +68,22 @@ import Layout from '../../layouts/Layout.astro';
             <div class="bg-zinc-900/50 border border-zinc-800/50 p-6 rounded-2xl">
               <h3 class="text-xl font-semibold text-zinc-100 mb-2">Bluetooth (BLE)</h3>
               <p class="text-zinc-400 leading-relaxed">
-                Questa autorizzazione è indispensabile. Permette al telefono di rilevare,
-                connettersi e scambiare dati di punteggio con i beacon Klikkr
-                tramite Bluetooth Low Energy. Nessun dato Bluetooth viene condiviso con terzi.
+                Questa autorizzazione è indispensabile. Permette al telefono di rilevare i
+                braccialetti Klikkr, connettersi e scambiare dati di punteggio tramite Bluetooth
+                Low Energy. Facoltativamente rispecchia il punteggio su un secondo telefono
+                (Display Mirror); questa connessione avviene direttamente tra i due dispositivi.
+                Nessun dato Bluetooth viene condiviso con terzi.
               </p>
             </div>
 
             <div class="bg-zinc-900/50 border border-zinc-800/50 p-6 rounded-2xl">
               <h3 class="text-xl font-semibold text-zinc-100 mb-2">Fotocamera</h3>
               <p class="text-zinc-400 leading-relaxed">
-                La fotocamera viene utilizzata esclusivamente per lo scanner di codici QR integrato.
-                Questo permette di associare rapidamente i dispositivi Bluetooth (indirizzi MAC) senza
-                dover cercare manualmente nell'elenco Bluetooth. La fotocamera si attiva solo quando
-                aprite esplicitamente lo scanner. Non vengono acquisite né memorizzate immagini o video.
+                La fotocamera viene utilizzata per lo scanner di codici QR integrato, che
+                permette di associare rapidamente i braccialetti Klikkr (indirizzi MAC), e per
+                scegliere il colore di un giocatore dall'immagine della fotocamera. La
+                fotocamera si attiva solo quando aprite esplicitamente lo scanner o la scelta
+                del colore. Non vengono acquisite né memorizzate immagini o video.
               </p>
             </div>
 
@@ -98,7 +101,40 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-zinc-50">5. Nessuna condivisione con terzi</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">5. Smartwatch (Wear OS e Apple Watch)</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            Se usate uno smartwatch come Klikkr, l'orologio e il telefono si scambiano gli
+            input, il punteggio e i colori e le iniziali dei giocatori. Per farlo l'app utilizza
+            la connessione che il sistema operativo mette a disposizione tra l'orologio e il
+            telefono associato (Wear OS Data Layer o Apple WatchConnectivity). Questi dati
+            restano sui vostri dispositivi e non vengono trasmessi né a noi né a terzi.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-zinc-50">6. Apple Salute (solo Apple Watch)</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            Perché l'Apple Watch continui a contare anche con il polso abbassato, durante una
+            partita l'app avvia una sessione di allenamento tramite HealthKit. Per questo
+            l'orologio chiede una sola volta l'autorizzazione a scrivere allenamenti. L'app non
+            legge dati sanitari, al termine della partita non salva l'allenamento nell'app
+            Salute e non utilizza dati sanitari per pubblicità o altri scopi.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-zinc-50">7. Acquisto in-app</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            La funzione smartwatch si sblocca con un acquisto in-app unico. Il pagamento è
+            gestito da Google Play o dall'App Store di Apple; non riceviamo dati di pagamento o
+            dell'account. L'app apprende dallo store solo se l'acquisto esiste e salva questa
+            informazione localmente sul dispositivo. Per l'acquisto si applicano inoltre le
+            informative sulla privacy di Google o di Apple.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-zinc-50">8. Nessuna condivisione con terzi</h2>
           <p class="text-zinc-300 leading-relaxed">
             L'app Klikkr non condivide alcun dato con terzi. Non sono integrati reti
             pubblicitarie, strumenti di analisi, servizi di segnalazione errori o altri
@@ -107,7 +143,7 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-zinc-50">6. Cancellazione dei dati</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">9. Cancellazione dei dati</h2>
           <p class="text-zinc-300 leading-relaxed">
             Poiché tutti i dati vengono memorizzati esclusivamente sul vostro dispositivo,
             è sufficiente disinstallare l'app per eliminare definitivamente tutti i dati associati.
@@ -116,7 +152,7 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-zinc-50">7. Contatto per questioni sulla privacy</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">10. Contatto per questioni sulla privacy</h2>
           <p class="text-zinc-300 leading-relaxed">
             Per qualsiasi domanda o dubbio sulla protezione dei dati, potete contattarci in qualsiasi momento:
           </p>
@@ -128,7 +164,7 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4 pb-12">
-          <h2 class="text-2xl font-bold text-zinc-50">8. Modifiche</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">11. Modifiche</h2>
           <p class="text-zinc-300 leading-relaxed">
             Ci riserviamo il diritto di aggiornare questa informativa sulla privacy se necessario.
             La versione attuale è sempre disponibile a questo indirizzo.

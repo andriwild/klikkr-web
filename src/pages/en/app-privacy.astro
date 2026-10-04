@@ -17,7 +17,7 @@ import Layout from '../../layouts/Layout.astro';
           <p class="text-xl text-zinc-400 font-medium">Klikkr Companion App (Android & iOS)</p>
         </div>
         <div class="flex flex-wrap items-center gap-4 text-sm text-zinc-500 bg-zinc-900/50 p-4 rounded-xl border border-zinc-800/50">
-          <span>Effective Date: March 24, 2026</span>
+          <span>Effective Date: October 4, 2026</span>
           <span class="hidden sm:inline">•</span>
           <a href="mailto:support@klikkr.ch" class="hover:text-emerald-400 transition-colors">support@klikkr.ch</a>
         </div>
@@ -68,19 +68,21 @@ import Layout from '../../layouts/Layout.astro';
             <div class="bg-zinc-900/50 border border-zinc-800/50 p-6 rounded-2xl">
               <h3 class="text-xl font-semibold text-zinc-100 mb-2">Bluetooth (BLE)</h3>
               <p class="text-zinc-400 leading-relaxed">
-                This permission is essential. It allows your phone to discover, connect to,
-                and exchange score data with the Klikkr hardware beacons via Bluetooth Low Energy.
-                No Bluetooth data is shared with third parties.
+                This permission is essential. It allows your phone to discover, connect to, and
+                exchange score data with the Klikkr wristbands via Bluetooth Low Energy.
+                Optionally, it mirrors the score to a second phone (Display Mirror); that
+                connection runs directly between the two devices. No Bluetooth data is shared
+                with third parties.
               </p>
             </div>
 
             <div class="bg-zinc-900/50 border border-zinc-800/50 p-6 rounded-2xl">
               <h3 class="text-xl font-semibold text-zinc-100 mb-2">Camera</h3>
               <p class="text-zinc-400 leading-relaxed">
-                The camera is used exclusively for the built-in QR code scanner. This allows you to
-                quickly pair Bluetooth devices (MAC addresses) without manually searching through
-                the Bluetooth device list. The camera is only activated when you explicitly open the
-                scanner. No images or videos are captured or stored.
+                The camera is used for the built-in QR code scanner, which lets you pair Klikkr
+                wristbands (MAC addresses) quickly, and for picking a player color from the
+                camera image. The camera is only activated when you explicitly open the scanner
+                or the color picker. No images or videos are captured or stored.
               </p>
             </div>
 
@@ -98,7 +100,40 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-zinc-50">5. No Third-Party Sharing</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">5. Smartwatch (Wear OS and Apple Watch)</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            If you use a smartwatch as a Klikkr, the watch and the phone exchange inputs, the
+            score, and the players' colors and initials. The app uses the connection the
+            operating system provides between the watch and its paired phone (Wear OS Data Layer
+            or Apple WatchConnectivity). This data stays on your devices and is not transmitted
+            to us or to third parties.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-zinc-50">6. Apple Health (Apple Watch only)</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            So that the Apple Watch keeps counting while your wrist is down, the app runs a
+            workout session through HealthKit during a match. For this, the watch asks once for
+            permission to write workouts. The app reads no health data, does not save the
+            workout to the Health app when the match ends, and does not use health data for
+            advertising or any other purpose.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-zinc-50">7. In-App Purchase</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            The smartwatch feature can be unlocked with a one-time in-app purchase. Payment is
+            handled by Google Play or Apple's App Store; we receive no payment or account data.
+            The app only learns from the store whether the purchase exists and stores that
+            information locally on the device. The privacy policies of Google or Apple also
+            apply to the purchase.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-zinc-50">8. No Third-Party Sharing</h2>
           <p class="text-zinc-300 leading-relaxed">
             The Klikkr app does not share any data with third parties. There are no
             ad networks, analytics tools, crash reporting services, or any other
@@ -107,7 +142,7 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-zinc-50">6. Data Deletion</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">9. Data Deletion</h2>
           <p class="text-zinc-300 leading-relaxed">
             Since all data is stored exclusively on your device,
             simply uninstalling the app permanently deletes all associated data.
@@ -116,7 +151,7 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4">
-          <h2 class="text-2xl font-bold text-zinc-50">7. Contact for Privacy Concerns</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">10. Contact for Privacy Concerns</h2>
           <p class="text-zinc-300 leading-relaxed">
             If you have any questions or concerns about privacy, you can reach us at any time:
           </p>
@@ -128,7 +163,7 @@ import Layout from '../../layouts/Layout.astro';
         </section>
 
         <section class="space-y-4 pb-12">
-          <h2 class="text-2xl font-bold text-zinc-50">8. Changes</h2>
+          <h2 class="text-2xl font-bold text-zinc-50">11. Changes</h2>
           <p class="text-zinc-300 leading-relaxed">
             We reserve the right to update this privacy policy as needed.
             The current version is always available at this address.
