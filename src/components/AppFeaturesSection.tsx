@@ -5,7 +5,7 @@ const APP_STORE_URL = 'https://apps.apple.com/ch/app/klikkr/id6761069158'
 const GOOGLE_PLAY_URL =
   'https://play.google.com/store/apps/details?id=ch.wild.klikkr'
 
-function StoreBadges({
+export function StoreBadges({
   t,
 }: {
   t: ReturnType<typeof getTranslations>['appFeatures']

@@ -90,6 +90,29 @@ export const en: Translations = {
     ],
   },
 
+  smartwatch: {
+    badge: 'New',
+    title: 'Your smartwatch is a',
+    titleAccent: 'Klikkr.',
+    description:
+      'No band at hand? With your Apple Watch or Wear OS watch you keep score right on your wrist.',
+    gestures: [
+      { title: 'Tap top', description: 'Your point.' },
+      { title: 'Tap bottom', description: 'Point for your opponent.' },
+      { title: 'Double tap', description: 'Take back the last point.' },
+      { title: 'Long press', description: 'Pause.' },
+    ],
+    faces: "The watch shows the players' colours and initials.",
+    pricing:
+      'Three matches free, then a one-time CHF 10 for the watch. No subscription.',
+    compatibility: 'Apple Watch with watchOS 10 or later · Wear OS 3 or later',
+    bandsHint:
+      'For doubles, or players without a smartwatch, there are the Klikkr bands.',
+    bandsLink: 'See the bands',
+    imageAlt:
+      'Klikkr scoreboard on an iPhone, next to an Apple Watch and a Wear OS watch showing the same score',
+  },
+
   features: {
     badge: 'For everyone who plays',
     title: 'Built for Your',

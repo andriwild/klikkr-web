@@ -92,6 +92,29 @@ export const it: Translations = {
     ],
   },
 
+  smartwatch: {
+    badge: 'Novità',
+    title: 'Il tuo smartwatch è un',
+    titleAccent: 'Klikkr.',
+    description:
+      'Niente braccialetto a portata di mano? Con il tuo Apple Watch o un orologio Wear OS conti i punti direttamente al polso.',
+    gestures: [
+      { title: 'Tocco in alto', description: 'Il tuo punto.' },
+      { title: 'Tocco in basso', description: "Punto per l'avversario." },
+      { title: 'Doppio tocco', description: "Annulla l'ultimo punto." },
+      { title: 'Pressione lunga', description: 'Pausa.' },
+    ],
+    faces: "L'orologio mostra i colori e le iniziali dei giocatori.",
+    pricing:
+      "Tre partite gratis, poi CHF 10 una sola volta per l'orologio. Nessun abbonamento.",
+    compatibility: 'Apple Watch da watchOS 10 · Wear OS dalla versione 3',
+    bandsHint:
+      'Per il doppio o per chi non ha uno smartwatch ci sono i braccialetti Klikkr.',
+    bandsLink: 'Vedi i braccialetti',
+    imageAlt:
+      'Tabellone Klikkr su un iPhone, accanto a un Apple Watch e a un orologio Wear OS con lo stesso punteggio',
+  },
+
   features: {
     badge: 'Per tutti quelli che giocano',
     title: 'Fatto per il tuo',

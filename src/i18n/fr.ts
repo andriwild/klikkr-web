@@ -92,6 +92,29 @@ export const fr: Translations = {
     ],
   },
 
+  smartwatch: {
+    badge: 'Nouveau',
+    title: 'Votre montre connectée est un',
+    titleAccent: 'Klikkr.',
+    description:
+      'Pas de bracelet sous la main ? Avec votre Apple Watch ou votre montre Wear OS, vous comptez les points directement au poignet.',
+    gestures: [
+      { title: 'Toucher en haut', description: 'Votre point.' },
+      { title: 'Toucher en bas', description: "Point pour l'adversaire." },
+      { title: 'Double toucher', description: 'Annuler le dernier point.' },
+      { title: 'Appui long', description: 'Pause.' },
+    ],
+    faces: 'La montre affiche les couleurs et les initiales des joueurs.',
+    pricing:
+      'Trois matchs gratuits, puis CHF 10 une seule fois pour la montre. Sans abonnement.',
+    compatibility: 'Apple Watch dès watchOS 10 · Wear OS dès la version 3',
+    bandsHint:
+      'Pour le double ou les joueurs sans montre connectée, il y a les bracelets Klikkr.',
+    bandsLink: 'Voir les bracelets',
+    imageAlt:
+      "Tableau de score Klikkr sur un iPhone, à côté d'une Apple Watch et d'une montre Wear OS affichant le même score",
+  },
+
   features: {
     badge: 'Pour tous ceux qui jouent',
     title: 'Conçu pour votre',

@@ -91,6 +91,29 @@ export const de: Translations = {
     ],
   },
 
+  smartwatch: {
+    badge: 'Neu',
+    title: 'Deine Smartwatch ist ein',
+    titleAccent: 'Klikkr.',
+    description:
+      'Kein Armband zur Hand? Mit deiner Apple Watch oder Wear-OS-Uhr zählst du direkt am Handgelenk.',
+    gestures: [
+      { title: 'Tipp oben', description: 'Dein Punkt.' },
+      { title: 'Tipp unten', description: 'Punkt für den Gegner.' },
+      { title: 'Doppeltipp', description: 'Letzten Punkt zurücknehmen.' },
+      { title: 'Lang drücken', description: 'Pause.' },
+    ],
+    faces: 'Die Uhr zeigt die Farben und Initialen der Spieler.',
+    pricing:
+      'Drei Matches gratis, danach einmalig CHF 10 für die Uhr. Kein Abo.',
+    compatibility: 'Apple Watch ab watchOS 10 · Wear OS ab Version 3',
+    bandsHint:
+      'Für Doppel oder Spieler ohne Smartwatch gibt es die Klikkr-Armbänder.',
+    bandsLink: 'Zu den Armbändern',
+    imageAlt:
+      'Klikkr-Scoreboard auf dem iPhone, daneben eine Apple Watch und eine Wear-OS-Uhr mit demselben Spielstand',
+  },
+
   features: {
     badge: 'Für alle, die spielen',
     title: 'Gemacht für deinen',
