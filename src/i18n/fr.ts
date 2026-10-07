@@ -358,12 +358,12 @@ export const fr: Translations = {
       {
         question: 'Comment remplacer la batterie ?',
         answer:
-          "Retirez d'abord délicatement le beacon BLE du bracelet en silicone. Ouvrez ensuite le couvercle du boîtier du beacon avec un objet plat (par exemple une pièce de monnaie ou un petit tournevis). Remplacez la pile bouton et remettez le couvercle en place.",
+          "Retirez d'abord délicatement le Klikkr du bracelet en silicone. Ouvrez ensuite le couvercle du boîtier du Klikkr avec un objet plat (par exemple une pièce de monnaie ou un petit tournevis). Remplacez la pile bouton et remettez le couvercle en place.",
       },
       {
-        question: 'Le beacon BLE est-il étanche ?',
+        question: 'Le Klikkr est-il étanche ?',
         answer:
-          "Non, le beacon BLE n'est pas étanche et ne doit pas être utilisé sous l'eau. Le bracelet en silicone est résistant aux éclaboussures et à la transpiration, mais le composant électronique ne doit pas entrer en contact avec l'eau.",
+          "Non, le Klikkr n'est pas étanche et ne doit pas être utilisé sous l'eau. Le bracelet en silicone est résistant aux éclaboussures et à la transpiration, mais le composant électronique ne doit pas entrer en contact avec l'eau.",
       },
     ],
   },
@@ -498,7 +498,7 @@ export const fr: Translations = {
       },
       swipe: {
         label: 'Swipe',
-        description: 'Score manuellement sur ton téléphone — sans beacon.',
+        description: 'Compte à la main sur le téléphone — sans Klikkr.',
         steps: [
           {
             title: 'Choisis ton sport',
@@ -529,60 +529,59 @@ export const fr: Translations = {
         ],
       },
       oneBeacon: {
-        label: '1 Beacon',
-        description: 'Un bracelet pour les deux joueurs — simple et rapide.',
+        label: '1 Klikkr',
+        description: 'Un Klikkr pour les deux joueurs — simple et rapide.',
         steps: [
           {
-            title: 'Connecter le beacon',
+            title: 'Connecte ton Klikkr',
             description:
-              'Allume ton bracelet (maintiens 3 sec) et connecte-le via QR code ou Bluetooth. Un seul beacon suffit.',
+              'Allume ton Klikkr (appui de 3 s) et connecte-le par QR code ou Bluetooth. Un seul suffit.',
           },
           {
-            title: 'Choisis ton sport',
+            title: 'Choisis le sport',
             description:
-              "Sélectionne ton sport — l'app détecte automatiquement le mode 1 beacon.",
+              "Choisis ton sport — l'app voit toute seule qu'un Klikkr est connecté.",
           },
           {
-            title: 'Configure les règles',
+            title: 'Règle les règles',
             description:
-              'Paramètre le score cible, "Win by 2" et d\'autres réglages spécifiques au sport.',
+              'Fixe le score cible, « win by 2 » et les autres réglages de ton sport.',
           },
           {
-            title: 'Clic & Score',
+            title: 'Clic & score',
             description:
-              '1 clic = un point pour toi. 2 clics = un point pour l’autre joueur. 3 clics reprennent le dernier point, un appui long met en pause.',
+              "1 clic = point pour toi. 2 clics = point pour l'adversaire. 3 clics annulent le dernier point, un appui long met en pause.",
           },
         ],
         images: [
-          '/app/fr/screens/beacons.webp',
+          '/app/fr/screens/beacons_one.webp',
           '/app/fr/screens/home.webp',
           '/app/fr/screens/rules.webp',
           '/app/fr/screens/scoreboard.webp',
         ],
       },
       twoBeacons: {
-        label: '2 Beacons',
-        description: 'Chaque joueur a son propre bracelet.',
+        label: '2 Klikkr',
+        description: 'Chaque joueur a son propre Klikkr.',
         steps: [
           {
-            title: 'Connecter les deux beacons',
+            title: 'Connecte les deux Klikkr',
             description:
-              'Allume les deux bracelets (maintiens 3 sec) et connecte-les via QR code ou Bluetooth.',
+              'Allume les deux Klikkr (appui de 3 s) et connecte-les par QR code ou Bluetooth.',
           },
           {
-            title: 'Choisis ton sport',
+            title: 'Choisis le sport',
             description:
-              "Sélectionne ton sport — l'app détecte le mode 2 beacons et assigne chaque beacon à un joueur.",
+              "Choisis ton sport — l'app voit toute seule les deux Klikkr et attribue un joueur à chacun.",
           },
           {
-            title: 'Configure les règles',
-            description:
-              "Paramètre les réglages spécifiques au sport comme d'habitude.",
+            title: 'Règle les règles',
+            description: "Règle les options de ton sport comme d'habitude.",
           },
           {
-            title: 'Clic & Score',
+            title: 'Clic & score',
             description:
-              '1 clic = ton propre point. 2 clics reprennent le dernier point, et à 0:0 cela change le service. Un appui long met en pause.',
+              '1 clic = ton propre point. 2 clics annulent le dernier point ; à 0:0 ils changent plutôt le service. Un appui long met en pause.',
           },
         ],
         images: [
@@ -594,42 +593,38 @@ export const fr: Translations = {
       },
       tournament: {
         label: 'Tournoi',
-        description: '3+ beacons — plusieurs joueurs, classement automatique.',
+        description:
+          '3+ Klikkr — plusieurs joueurs, calendrier et classement automatiques.',
         steps: [
           {
-            title: 'Connecter 3+ beacons',
+            title: 'Connecte les Klikkr',
             description:
-              "Connecte 3 bracelets ou plus — l'app passe automatiquement en mode tournoi.",
+              "Connecte 3 Klikkr ou plus — l'app passe toute seule en mode tournoi.",
           },
           {
-            title: 'Choisis ton sport',
-            description: 'Sélectionne ton sport parmi les options disponibles.',
+            title: 'Choisis les joueurs',
+            description: 'Choisis les participants et le sport.',
           },
           {
-            title: 'Configure les règles',
-            description: 'Paramètre les réglages spécifiques au tournoi.',
-          },
-          {
-            title: 'Sélectionner les joueurs',
+            title: 'Calendrier',
             description:
-              "Active ou désactive les joueurs d'un clic. Choisis qui joue contre qui avant chaque match.",
+              'En round robin, chacun joue contre chacun. Le calendrier montre les matchs joués avec leur résultat et celui qui suit.',
           },
           {
-            title: 'Jouer le match',
+            title: 'Joue un match',
             description:
-              'Les deux joueurs cliquent une fois pour lancer le match. Ensuite 1 clic = ton point, 2 clics le reprennent. Après le match, un clic lance le suivant.',
+              'Les deux joueurs cliquent une fois pour lancer le match. Ensuite 1 clic = ton point, 2 clics annulent. Après le match, un clic lance le suivant.',
           },
           {
-            title: 'Résultats du tournoi',
+            title: 'Classement',
             description:
-              'Après chaque match, le classement général se met à jour : qui a battu qui ?',
+              'Après chaque match, le classement se met à jour : qui a battu qui ?',
           },
         ],
         images: [
-          '/app/fr/screens/menu.webp',
-          '/app/fr/screens/home.webp',
-          '/app/fr/screens/rules.webp',
+          '/app/fr/screens/beacons.webp',
           '/app/fr/screens/setup.webp',
+          '/app/fr/screens/tournament.webp',
           '/app/fr/screens/scoreboard.webp',
           '/app/fr/screens/summary.webp',
         ],

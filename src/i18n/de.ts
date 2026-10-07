@@ -354,12 +354,12 @@ export const de: Translations = {
       {
         question: 'Wie wechsle ich die Batterie?',
         answer:
-          'Entferne zunächst den BLE Beacon vorsichtig aus dem Silikonarmband. Löse dann den Gehäusedeckel des Beacons mit einem flachen Gegenstand (z.B. einer Münze oder einem kleinen Schraubenzieher). Ersetze die Knopfzelle und setze den Deckel wieder auf.',
+          'Entferne zunächst den Klikkr vorsichtig aus dem Silikonarmband. Löse dann den Gehäusedeckel des Klikkr mit einem flachen Gegenstand (z.B. einer Münze oder einem kleinen Schraubenzieher). Ersetze die Knopfzelle und setze den Deckel wieder auf.',
       },
       {
-        question: 'Ist der BLE Beacon wasserdicht?',
+        question: 'Ist der Klikkr wasserdicht?',
         answer:
-          'Nein, der BLE Beacon selbst ist nicht wasserdicht und darf nicht unter Wasser verwendet werden. Das Silikonarmband ist zwar spritzwassergeschützt und schweissresistent, aber der elektronische Beacon sollte nicht mit Wasser in Berührung kommen.',
+          'Nein, der Klikkr selbst ist nicht wasserdicht und darf nicht unter Wasser verwendet werden. Das Silikonarmband ist zwar spritzwassergeschützt und schweissresistent, aber der Klikkr sollte nicht mit Wasser in Berührung kommen.',
       },
     ],
   },
@@ -492,7 +492,7 @@ export const de: Translations = {
       },
       swipe: {
         label: 'Swipe',
-        description: 'Manuell auf dem Handy scoren — ganz ohne Beacon.',
+        description: 'Manuell auf dem Handy scoren — ganz ohne Klikkr.',
         steps: [
           {
             title: 'Sportart wählen',
@@ -523,55 +523,55 @@ export const de: Translations = {
         ],
       },
       oneBeacon: {
-        label: '1 Beacon',
-        description: 'Ein Wristband für beide Spieler — einfach und schnell.',
+        label: '1 Klikkr',
+        description: 'Ein Klikkr für beide Spieler — einfach und schnell.',
         steps: [
           {
-            title: 'Beacon verbinden',
+            title: 'Klikkr verbinden',
             description:
-              'Schalte dein Wristband ein (3 Sek. drücken) und verbinde es per QR-Code oder Bluetooth. Ein Beacon reicht.',
+              'Schalte deinen Klikkr ein (3 Sek. drücken) und verbinde ihn per QR-Code oder Bluetooth. Einer reicht.',
           },
           {
             title: 'Sportart wählen',
             description:
-              'Wähle deine Sportart aus — die App erkennt automatisch den 1-Beacon-Modus.',
+              'Wähle deine Sportart — die App erkennt automatisch, dass ein Klikkr verbunden ist.',
           },
           {
             title: 'Regeln einstellen',
             description:
-              'Konfiguriere Zielpunktzahl, "Win by 2" und weitere sportspezifische Einstellungen.',
+              'Lege Zielpunktzahl, „Win by 2“ und weitere Einstellungen deiner Sportart fest.',
           },
           {
             title: 'Klick & Score',
             description:
-              '1x Klick = Punkt für dich. 2x Klick = Punkt für den anderen Spieler. 3x Klick nimmt den letzten Punkt zurück, langes Drücken pausiert.',
+              '1x Klick = Punkt für dich. 2x Klick = Punkt für den Gegner. 3x Klick nimmt den letzten Punkt zurück, langes Drücken pausiert.',
           },
         ],
         images: [
-          '/app/de/screens/beacons.webp',
+          '/app/de/screens/beacons_one.webp',
           '/app/de/screens/home.webp',
           '/app/de/screens/rules.webp',
           '/app/de/screens/scoreboard.webp',
         ],
       },
       twoBeacons: {
-        label: '2 Beacons',
-        description: 'Jeder Spieler hat sein eigenes Wristband.',
+        label: '2 Klikkr',
+        description: 'Jeder Spieler hat seinen eigenen Klikkr.',
         steps: [
           {
-            title: 'Beide Beacons verbinden',
+            title: 'Beide Klikkr verbinden',
             description:
-              'Schalte beide Wristbands ein (3 Sek. drücken) und verbinde sie per QR-Code oder Bluetooth.',
+              'Schalte beide Klikkr ein (3 Sek. drücken) und verbinde sie per QR-Code oder Bluetooth.',
           },
           {
             title: 'Sportart wählen',
             description:
-              'Wähle deine Sportart — die App erkennt automatisch den 2-Beacon-Modus und weist jedem Beacon einen Spieler zu.',
+              'Wähle deine Sportart — die App erkennt automatisch die zwei Klikkr und weist jedem einen Spieler zu.',
           },
           {
             title: 'Regeln einstellen',
             description:
-              'Konfiguriere die sportspezifischen Einstellungen wie gewohnt.',
+              'Lege die Einstellungen deiner Sportart wie gewohnt fest.',
           },
           {
             title: 'Klick & Score',
@@ -588,25 +588,22 @@ export const de: Translations = {
       },
       tournament: {
         label: 'Turnier',
-        description: '3+ Beacons — mehrere Spieler, automatische Rangliste.',
+        description:
+          '3+ Klikkr — mehrere Spieler, automatischer Spielplan und Rangliste.',
         steps: [
           {
-            title: '3+ Beacons verbinden',
+            title: 'Klikkr verbinden',
             description:
-              'Verbinde 3 oder mehr Wristbands — die App erkennt automatisch den Turnier-Modus.',
-          },
-          {
-            title: 'Sportart wählen',
-            description: 'Wähle deine Sportart aus den verfügbaren Optionen.',
-          },
-          {
-            title: 'Regeln einstellen',
-            description: 'Konfiguriere die Turnier-spezifischen Einstellungen.',
+              'Verbinde 3 oder mehr Klikkr — die App erkennt automatisch den Turnier-Modus.',
           },
           {
             title: 'Spieler auswählen',
+            description: 'Wähle die Teilnehmer und die Sportart.',
+          },
+          {
+            title: 'Spielplan',
             description:
-              'Aktiviere oder deaktiviere Spieler mit einem Klick. Wähle vor jedem Match, wer gegeneinander antritt.',
+              'Im Round Robin spielt jeder gegen jeden. Der Spielplan zeigt gespielte Matches mit Ergebnis und welches als Nächstes dran ist.',
           },
           {
             title: 'Match spielen',
@@ -614,16 +611,15 @@ export const de: Translations = {
               'Beide Spieler klicken einmal, um das Match zu starten. Danach 1x Klick = eigener Punkt, 2x Klick nimmt zurück. Nach dem Match startet ein Klick das nächste.',
           },
           {
-            title: 'Turnier-Auswertung',
+            title: 'Auswertung',
             description:
-              'Nach jedem Match wird die Gesamtübersicht aktualisiert: Wer hat gegen wen gewonnen?',
+              'Nach jedem Match wird die Rangliste aktualisiert: Wer hat gegen wen gewonnen?',
           },
         ],
         images: [
-          '/app/de/screens/menu.webp',
-          '/app/de/screens/home.webp',
-          '/app/de/screens/rules.webp',
+          '/app/de/screens/beacons.webp',
           '/app/de/screens/setup.webp',
+          '/app/de/screens/tournament.webp',
           '/app/de/screens/scoreboard.webp',
           '/app/de/screens/summary.webp',
         ],

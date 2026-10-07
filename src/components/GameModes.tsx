@@ -104,7 +104,7 @@ function StepPicture({ image, alt }: { image?: StepImage; alt: string }) {
         src={image}
         alt={alt}
         loading="lazy"
-        className="w-full aspect-[9/16] object-cover rounded-[1.3rem]"
+        className="w-full aspect-[1320/2868] object-cover rounded-[1.3rem]"
       />
     </div>
   )
@@ -285,7 +285,7 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
               recessed by an inset ring, one hard-edged glass glint and
               the side buttons. The screenshots inside carry no frame of
               their own. */}
-          <div className="relative w-[360px]">
+          <div className="relative w-[min(340px,34vh)]">
             {images.map((image, i) =>
               typeof image === 'string' ? null : (
                 <img
@@ -305,8 +305,9 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
             >
               <div className="rounded-[2.55rem] bg-[#17171b] p-[7px]">
                 <div className="relative rounded-[2.15rem] overflow-hidden bg-zinc-900">
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-[#17171b] rounded-b-2xl z-20" />
-                  <div className="relative aspect-[9/16]">
+                  {/* Dynamic Island, at the spot the iPhone captures leave for it */}
+                  <div className="absolute top-[1.6%] left-1/2 -translate-x-1/2 w-[30%] h-[3.3%] bg-black rounded-full z-20" />
+                  <div className="relative aspect-[1320/2868]">
                     {images.map((src, i) =>
                       typeof src !== 'string' ? null : (
                         <img
