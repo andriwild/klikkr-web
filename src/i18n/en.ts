@@ -102,8 +102,7 @@ export const en: Translations = {
       'Three matches free, then a one-time CHF 10 for the watch. No subscription.',
     compatibility: 'Apple Watch with watchOS 10 or later · Wear OS 3 or later',
     howLink: 'How to score with the watch',
-    bandsHint:
-      'For doubles, or players without a smartwatch, there are the Klikkr bands.',
+    bandsHint: 'For players without a smartwatch, there are the Klikkr bands.',
     bandsLink: 'See the bands',
     imageAlt:
       'Klikkr scoreboard on an iPhone, next to an Apple Watch showing the same score',
@@ -470,23 +469,23 @@ export const en: Translations = {
           {
             title: 'Start the match on your phone',
             description:
-              'Pick the sport, assign the players, start. Your phone shows the score, the watch shows the same players in their colours. One watch is enough for the whole match, doubles included.',
+              'Pick the sport, assign the players, tap “Start Game”. As soon as the match runs, the watch switches to the players in their colours. One watch is enough for the whole match, doubles included.',
           },
           {
             title: 'Score from your wrist',
             description:
-              "Your initials are at the top, in doubles with your partner's: tap the top for your side's point, the bottom for the opponents'. A double tap takes back the last point, a long press pauses and resumes.",
+              "Your initials are at the top, in doubles with your partner's, and the dot in front marks who serves. Tap the top for your side's point, the bottom for the opponents'. The score is on your phone. A double tap takes back the last point, a long press pauses and resumes.",
           },
           {
             title: 'Result',
             description:
-              'After match point the result is on your phone and in your statistics. Three matches with the watch are free, then unlock it once for CHF 10 in the Klikkr app on your phone, for your Apple ID or Google account.',
+              'After match point the result is on your phone and in your statistics. Three matches with the watch are free, then unlock it once for CHF 10 in the Klikkr app on your phone. The purchase holds for your Apple ID or Google account, so for all your watches.',
           },
         ],
         images: [
           { src: '/app/en/screens/watch_idle.webp', bare: true as const },
+          '/app/en/screens/setup.webp',
           { src: '/app/en/screens/watch_pair.webp', bare: true as const },
-          { src: '/app/en/screens/watch_match.webp', bare: true as const },
           '/app/en/screens/summary.webp',
         ],
       },

@@ -103,8 +103,7 @@ export const de: Translations = {
       'Drei Matches gratis, danach einmalig CHF 10 für die Uhr. Kein Abo.',
     compatibility: 'Apple Watch ab watchOS 10 · Wear OS ab Version 3',
     howLink: 'So zählst du mit der Uhr',
-    bandsHint:
-      'Für Doppel oder Spieler ohne Smartwatch gibt es die Klikkr-Armbänder.',
+    bandsHint: 'Für Spieler ohne Smartwatch gibt es die Klikkr-Armbänder.',
     bandsLink: 'Zu den Armbändern',
     imageAlt:
       'Klikkr-Scoreboard auf dem iPhone, daneben eine Apple Watch mit demselben Spielstand',
@@ -471,23 +470,23 @@ export const de: Translations = {
           {
             title: 'Match am Handy starten',
             description:
-              'Sportart wählen, Spieler zuweisen, starten. Den Spielstand zeigt das Handy, die Uhr zeigt dieselben Spieler in ihren Farben. Eine Uhr reicht fürs ganze Match, auch im Doppel.',
+              'Sportart wählen, Spieler zuweisen, „Spiel starten“ tippen. Sobald das Match läuft, wechselt die Uhr zu den Spielern in ihren Farben. Eine Uhr reicht fürs ganze Match, auch im Doppel.',
           },
           {
             title: 'Am Handgelenk zählen',
             description:
-              'Oben stehen deine Initialen, im Doppel mit denen deines Partners: Tipp oben zählt den Punkt für euch, Tipp unten für die Gegner. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert und setzt fort.',
+              'Oben stehen deine Initialen, im Doppel mit denen deines Partners, der Punkt davor zeigt, wer aufschlägt. Tipp oben zählt den Punkt für euch, Tipp unten für die Gegner. Den Spielstand siehst du auf dem Handy. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert und setzt fort.',
           },
           {
             title: 'Ergebnis',
             description:
-              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach schaltest du sie in der Klikkr-App auf dem Handy einmalig für CHF 10 frei, gültig für deine Apple-ID bzw. dein Google-Konto.',
+              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach schaltest du sie in der Klikkr-App auf dem Handy einmalig für CHF 10 frei. Der Kauf gilt für deine Apple-ID bzw. dein Google-Konto, also für alle deine Uhren.',
           },
         ],
         images: [
           { src: '/app/de/screens/watch_idle.webp', bare: true as const },
+          '/app/de/screens/setup.webp',
           { src: '/app/de/screens/watch_pair.webp', bare: true as const },
-          { src: '/app/de/screens/watch_match.webp', bare: true as const },
           '/app/de/screens/summary.webp',
         ],
       },

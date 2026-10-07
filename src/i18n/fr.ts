@@ -105,7 +105,7 @@ export const fr: Translations = {
     compatibility: 'Apple Watch dès watchOS 10 · Wear OS dès la version 3',
     howLink: 'Comment compter avec la montre',
     bandsHint:
-      'Pour le double ou les joueurs sans montre connectée, il y a les bracelets Klikkr.',
+      'Pour les joueurs sans montre connectée, il y a les bracelets Klikkr.',
     bandsLink: 'Voir les bracelets',
     imageAlt:
       "Tableau de score Klikkr sur un iPhone, à côté d'une Apple Watch affichant le même score",
@@ -476,23 +476,23 @@ export const fr: Translations = {
           {
             title: 'Lance le match sur le téléphone',
             description:
-              'Choisis le sport, attribue les joueurs, lance. Le téléphone affiche le score, la montre les mêmes joueurs dans leurs couleurs. Une seule montre suffit pour tout le match, même en double.',
+              'Choisis le sport, attribue les joueurs, touche « Démarrer ». Dès que le match démarre, la montre affiche les joueurs dans leurs couleurs. Une seule montre suffit pour tout le match, même en double.',
           },
           {
             title: 'Compte au poignet',
             description:
-              'Tes initiales sont en haut, en double avec celles de ton partenaire : touche en haut pour votre point, en bas pour celui des adversaires. Un double toucher annule le dernier point, un appui long met en pause et relance.',
+              "Tes initiales sont en haut, en double avec celles de ton partenaire, et le point devant indique qui sert. Touche en haut pour votre point, en bas pour celui des adversaires. Le score s'affiche sur le téléphone. Un double toucher annule le dernier point, un appui long met en pause et relance.",
           },
           {
             title: 'Résultat',
             description:
-              "Après la balle de match, le résultat s'affiche sur le téléphone et rejoint tes statistiques. Trois matchs avec la montre sont gratuits, ensuite tu la débloques une seule fois pour CHF 10 dans l'app Klikkr du téléphone, pour ton identifiant Apple ou ton compte Google.",
+              "Après la balle de match, le résultat s'affiche sur le téléphone et rejoint tes statistiques. Trois matchs avec la montre sont gratuits, ensuite tu la débloques une seule fois pour CHF 10 dans l'app Klikkr du téléphone. L'achat vaut pour ton identifiant Apple ou ton compte Google, donc pour toutes tes montres.",
           },
         ],
         images: [
           { src: '/app/fr/screens/watch_idle.webp', bare: true as const },
+          '/app/fr/screens/setup.webp',
           { src: '/app/fr/screens/watch_pair.webp', bare: true as const },
-          { src: '/app/fr/screens/watch_match.webp', bare: true as const },
           '/app/fr/screens/summary.webp',
         ],
       },

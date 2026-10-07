@@ -104,8 +104,7 @@ export const it: Translations = {
       "Tre partite gratis, poi CHF 10 una sola volta per l'orologio. Nessun abbonamento.",
     compatibility: 'Apple Watch da watchOS 10 · Wear OS dalla versione 3',
     howLink: "Come contare con l'orologio",
-    bandsHint:
-      'Per il doppio o per chi non ha uno smartwatch ci sono i braccialetti Klikkr.',
+    bandsHint: 'Per chi non ha uno smartwatch ci sono i braccialetti Klikkr.',
     bandsLink: 'Vedi i braccialetti',
     imageAlt:
       'Tabellone Klikkr su un iPhone, accanto a un Apple Watch con lo stesso punteggio',
@@ -478,23 +477,23 @@ export const it: Translations = {
           {
             title: 'Avvia la partita sul telefono',
             description:
-              "Scegli lo sport, assegna i giocatori, avvia. Il punteggio è sul telefono, l'orologio mostra gli stessi giocatori nei loro colori. Basta un orologio per tutta la partita, anche in doppio.",
+              "Scegli lo sport, assegna i giocatori, tocca «Inizia». Appena la partita parte, l'orologio mostra i giocatori nei loro colori. Basta un orologio per tutta la partita, anche in doppio.",
           },
           {
             title: 'Conta dal polso',
             description:
-              "In alto ci sono le tue iniziali, in doppio con quelle del tuo compagno: tocca in alto per il punto della tua squadra, in basso per quello degli avversari. Un doppio tocco annulla l'ultimo punto, una pressione lunga mette in pausa e riprende.",
+              "In alto ci sono le tue iniziali, in doppio con quelle del tuo compagno, e il punto davanti indica chi serve. Tocca in alto per il punto della tua squadra, in basso per quello degli avversari. Il punteggio è sul telefono. Un doppio tocco annulla l'ultimo punto, una pressione lunga mette in pausa e riprende.",
           },
           {
             title: 'Risultato',
             description:
-              "Dopo il match point il risultato è sul telefono e finisce nelle statistiche. Tre partite con l'orologio sono gratis, poi lo sblocchi una sola volta per CHF 10 nell'app Klikkr sul telefono, per il tuo ID Apple o account Google.",
+              "Dopo il match point il risultato è sul telefono e finisce nelle statistiche. Tre partite con l'orologio sono gratis, poi lo sblocchi una sola volta per CHF 10 nell'app Klikkr sul telefono. L'acquisto vale per il tuo ID Apple o account Google, quindi per tutti i tuoi orologi.",
           },
         ],
         images: [
           { src: '/app/it/screens/watch_idle.webp', bare: true as const },
+          '/app/it/screens/setup.webp',
           { src: '/app/it/screens/watch_pair.webp', bare: true as const },
-          { src: '/app/it/screens/watch_match.webp', bare: true as const },
           '/app/it/screens/summary.webp',
         ],
       },
