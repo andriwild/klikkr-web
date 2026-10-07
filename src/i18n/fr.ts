@@ -121,36 +121,6 @@ export const fr: Translations = {
       "Tableau de score Klikkr sur un iPhone, à côté d'une Apple Watch affichant le même score",
   },
 
-  features: {
-    badge: 'Pour tous ceux qui jouent',
-    title: 'Conçu pour votre',
-    titleAccent: 'Sport',
-    description:
-      "Gardez le score en vue sans compter. Un clic par point — l'app s'occupe du reste.",
-    moreSports:
-      'Fonctionne avec chaque sport de raquette — dont le Tennis, le Tennis de table & le Pickleball.',
-    items: [
-      {
-        title: 'Padel',
-        imageAlt: 'Joueur de padel utilisant le tracker Klikkr au poignet',
-        description:
-          "Ne perdez plus le compte pendant les longs duels. Concentrez-vous sur votre smash, on s'occupe du score.",
-      },
-      {
-        title: 'Squash',
-        imageAlt: 'Bracelet Klikkr utilisé pendant une partie de squash',
-        description:
-          'Gardez le fil de chaque échange intense. Un clic et vous êtes prêt pour le prochain service.',
-      },
-      {
-        title: 'Badminton',
-        imageAlt: "Bracelet Klikkr porté lors d'un entraînement de badminton",
-        description:
-          'Suivez chaque échange rapide. Un clic et le point est enregistré.',
-      },
-    ],
-  },
-
   appFeatures: {
     downloadAppStore: "Télécharger dans l'App Store",
     downloadGooglePlay: 'Disponible sur Google Play',
@@ -321,6 +291,7 @@ export const fr: Translations = {
     titleAccent: 'joueurs',
     description:
       'Découvrez ce que les athlètes qui utilisent déjà Klikkr dans leurs matchs quotidiens en pensent.',
+    allLink: 'Tous les avis',
     reviewsCount: 'Avis',
     bottomCta:
       "Rejoignez la communauté de joueurs satisfaits – obtenez votre Klikkr aujourd'hui.",

@@ -119,36 +119,6 @@ export const en: Translations = {
       'Klikkr scoreboard on an iPhone, next to an Apple Watch showing the same score',
   },
 
-  features: {
-    badge: 'For everyone who plays',
-    title: 'Built for Your',
-    titleAccent: 'Sport',
-    description:
-      'Keep the score in view without counting along. One click per point — the app handles the rest.',
-    moreSports:
-      'Works with every racket sport — including Tennis, Table Tennis & Pickleball.',
-    items: [
-      {
-        title: 'Padel',
-        imageAlt: 'Padel player using the Klikkr score tracker on the wrist',
-        description:
-          "Don't lose count during those long duels. Focus on your smash, we track the score.",
-      },
-      {
-        title: 'Squash',
-        imageAlt: 'Klikkr wristband in action during a squash match',
-        description:
-          "Keep track of every brutal rally. One click and you're ready for the next serve.",
-      },
-      {
-        title: 'Badminton',
-        imageAlt: 'Klikkr wristband worn during badminton training',
-        description:
-          'Keep track of every fast-paced rally. One click and the point is recorded.',
-      },
-    ],
-  },
-
   appFeatures: {
     downloadAppStore: 'Download on the App Store',
     downloadGooglePlay: 'Get it on Google Play',
@@ -317,6 +287,7 @@ export const en: Translations = {
     titleAccent: 'Reviews',
     description:
       'Hear from athletes who are already using Klikkr in their daily matches.',
+    allLink: 'All reviews',
     reviewsCount: 'Reviews',
     bottomCta: 'Join the community of happy players – get your Klikkr today.',
     happyPlayers: 'happy players',

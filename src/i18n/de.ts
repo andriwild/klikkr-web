@@ -120,36 +120,6 @@ export const de: Translations = {
       'Klikkr-Scoreboard auf dem iPhone, daneben eine Apple Watch mit demselben Spielstand',
   },
 
-  features: {
-    badge: 'Für alle, die spielen',
-    title: 'Gemacht für deinen',
-    titleAccent: 'Sport',
-    description:
-      'Behalte den Score im Blick, ohne mitzuzählen. Ein Klick pro Punkt — den Rest erledigt die App.',
-    moreSports:
-      'Funktioniert mit jedem Racketsport — auch Tennis, Tischtennis & Pickleball.',
-    items: [
-      {
-        title: 'Padel',
-        imageAlt: 'Padel-Spieler nutzt Klikkr Score-Tracker am Handgelenk',
-        description:
-          'Verliere bei langen Duellen nicht den Überblick. Konzentrier dich auf deinen Smash, wir zählen den Score.',
-      },
-      {
-        title: 'Squash',
-        imageAlt: 'Klikkr Armband beim Squash-Spiel im Einsatz',
-        description:
-          'Behalte den Überblick über jedes intensive Rally. Ein Klick und du bist bereit für den nächsten Aufschlag.',
-      },
-      {
-        title: 'Badminton',
-        imageAlt: 'Klikkr Armband beim Badminton-Spiel im Einsatz',
-        description:
-          'Behalte den Überblick bei jedem schnellen Ballwechsel. Ein Klick und der Punkt ist gezählt.',
-      },
-    ],
-  },
-
   appFeatures: {
     downloadAppStore: 'Im App Store laden',
     downloadGooglePlay: 'Jetzt bei Google Play',
@@ -319,6 +289,7 @@ export const de: Translations = {
     titleAccent: 'Bewertungen',
     description:
       'Höre von Athleten, die Klikkr bereits in ihren täglichen Matches nutzen.',
+    allLink: 'Alle Bewertungen',
     reviewsCount: 'Bewertungen',
     bottomCta:
       'Werde Teil der Community zufriedener Spieler – hol dir dein Klikkr noch heute.',
