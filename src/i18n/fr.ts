@@ -471,27 +471,27 @@ export const fr: Translations = {
           {
             title: "Ouvre l'app sur la montre",
             description:
-              "Ouvre Klikkr sur ton Apple Watch ou ta montre Wear OS. Elle attend qu'un match démarre sur le téléphone.",
+              "Sur l'Apple Watch, Klikkr arrive avec l'app iPhone ; sur une montre Wear OS, installe-la depuis le Play Store de la montre. Ouvre-la : elle se connecte toute seule au téléphone et attend un match.",
           },
           {
             title: 'Lance le match sur le téléphone',
             description:
-              'Choisis le sport, attribue les joueurs, lance. La montre affiche aussitôt les couleurs et les initiales des joueurs.',
+              'Choisis le sport, attribue les joueurs, lance. Le tableau de score tourne sur le téléphone, la montre affiche les mêmes joueurs dans leurs couleurs.',
           },
           {
             title: 'Compte au poignet',
             description:
-              "Touche en haut pour ton point, en bas pour celui de l'adversaire. Un double toucher annule le dernier point, un appui long met en pause.",
+              "Tes initiales sont en haut : touche en haut pour ton point, en bas pour celui de l'adversaire. Un double toucher annule le dernier point, un appui long met en pause et relance.",
           },
           {
             title: 'Résultat',
             description:
-              "Après la balle de match, le résultat s'affiche sur le téléphone et rejoint tes statistiques. Trois matchs avec la montre sont gratuits, ensuite CHF 10 une seule fois.",
+              "Après la balle de match, le résultat s'affiche sur le téléphone et rejoint tes statistiques. Trois matchs avec la montre sont gratuits, ensuite tu la débloques une seule fois pour CHF 10 dans l'app Klikkr du téléphone.",
           },
         ],
         images: [
           { src: '/app/fr/screens/watch_idle.webp', bare: true as const },
-          '/app/fr/screens/setup.webp',
+          '/app/fr/screens/scoreboard.webp',
           { src: '/app/fr/screens/watch_match.webp', bare: true as const },
           '/app/fr/screens/summary.webp',
         ],

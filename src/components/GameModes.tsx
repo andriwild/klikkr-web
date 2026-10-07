@@ -105,7 +105,15 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
         ([entry]) => {
           if (entry.isIntersecting) setActiveStep(i)
         },
-        { rootMargin: '-40% 0px -40% 0px', threshold: 0 }
+        // Side by side (lg) the card is active in the middle band. On a
+        // narrow screen the device sits in the upper half, so a card is
+        // only active once it is in the lower half and never covers it.
+        {
+          rootMargin: window.matchMedia('(min-width: 1024px)').matches
+            ? '-40% 0px -40% 0px'
+            : '-62% 0px -18% 0px',
+          threshold: 0,
+        }
       )
       observer.observe(el)
       observers.push(observer)
@@ -229,15 +237,19 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
         role="tabpanel"
         aria-labelledby={`mode-tab-${activeMode}`}
       >
-        {/* Sticky phone — stays centered behind the text */}
-        <div className="sticky top-0 h-screen flex items-center justify-center pointer-events-none z-0">
+        {/* Sticky device. Side by side from lg on, the device on the
+            right and the cards on the left, so a card never covers the
+            screen it explains. Narrower, the device sits in the upper
+            half and the cards pass below it, and behind it once they
+            are done, so a finished card never covers the device. */}
+        <div className="sticky top-0 h-screen flex items-start pt-32 lg:items-center lg:pt-0 justify-center lg:justify-end lg:pr-[max(3rem,calc((100vw-72rem)/2+3rem))] pointer-events-none z-20 lg:z-0">
           {/* The phone is drawn in CSS, in layers, because one bordered
               rounded rectangle reads as a rectangle: a metallic bevel
               catching light from the top left, a matte body, a screen
               recessed by an inset ring, one hard-edged glass glint and
               the side buttons. The screenshots inside carry no frame of
               their own. */}
-          <div className="relative w-[300px] sm:w-[350px] md:w-[400px]">
+          <div className="relative w-[200px] sm:w-[240px] lg:w-[360px]">
             {images.map((image, i) =>
               typeof image === 'string' ? null : (
                 <img
@@ -286,28 +298,28 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
               <span className="absolute -left-[2px] top-[29%] h-[6%] w-[3px] rounded bg-[linear-gradient(180deg,#8e8e99,#34343c)]" />
               <span className="absolute -right-[2px] top-[25%] h-[9%] w-[3px] rounded bg-[linear-gradient(180deg,#8e8e99,#34343c)]" />
             </div>
+            {/* Dot indicator, right under the device, where the eye already is */}
+            <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
+              {steps.map((_: unknown, i: number) => (
+                <div
+                  key={`${activeMode}-dot-${i}`}
+                  className={`rounded-full transition-all duration-300 ${
+                    i === activeStep
+                      ? `w-8 h-3 ${colors.accent}`
+                      : 'w-3 h-3 bg-zinc-700'
+                  }`}
+                />
+              ))}
+            </div>
             {/* Glow behind phone */}
             <div
               className={`absolute -inset-4 bg-gradient-to-b ${colors.glow} rounded-[4rem] blur-2xl -z-10 transition-all duration-700`}
             />
           </div>
-
-          {/* Dot indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
-            {steps.map((_: unknown, i: number) => (
-              <div
-                key={`${activeMode}-dot-${i}`}
-                className={`rounded-full transition-all duration-300 ${
-                  i === activeStep
-                    ? `w-8 h-3 ${colors.accent}`
-                    : 'w-3 h-3 bg-zinc-700'
-                }`}
-              />
-            ))}
-          </div>
         </div>
 
-        {/* Scrollable text cards — overlay on top of phone */}
+        {/* Scrollable text cards: beside the device from lg on, below
+            it on narrower screens */}
         <div className="relative z-10 -mt-[100vh]">
           <div className="h-[10vh]" />
 
@@ -318,7 +330,7 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
                 ref={(el) => {
                   stepsRef.current[i] = el
                 }}
-                className="min-h-[60vh] flex items-center justify-center px-4"
+                className="min-h-[60vh] flex items-center justify-center lg:justify-start px-4 lg:pl-[max(3rem,calc((100vw-72rem)/2+3rem))]"
               >
                 <div
                   className={`max-w-md w-full p-6 md:p-8 rounded-2xl border backdrop-blur-xl transition-all duration-500 ${

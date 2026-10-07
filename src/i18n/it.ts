@@ -473,27 +473,27 @@ export const it: Translations = {
           {
             title: "Apri l'app sull'orologio",
             description:
-              "Apri Klikkr sul tuo Apple Watch o sull'orologio Wear OS. Aspetta che sul telefono parta una partita.",
+              "Sull'Apple Watch Klikkr arriva con l'app per iPhone; su un orologio Wear OS la installi dal Play Store dell'orologio. Aprila: si collega da sola al telefono e aspetta una partita.",
           },
           {
             title: 'Avvia la partita sul telefono',
             description:
-              "Scegli lo sport, assegna i giocatori, avvia. L'orologio mostra subito i colori e le iniziali dei giocatori.",
+              "Scegli lo sport, assegna i giocatori, avvia. Sul telefono gira il tabellone, l'orologio mostra gli stessi giocatori nei loro colori.",
           },
           {
             title: 'Conta dal polso',
             description:
-              "Tocca in alto per il tuo punto, in basso per quello dell'avversario. Un doppio tocco annulla l'ultimo punto, una pressione lunga mette in pausa.",
+              "In alto ci sono le tue iniziali: tocca in alto per il tuo punto, in basso per quello dell'avversario. Un doppio tocco annulla l'ultimo punto, una pressione lunga mette in pausa e riprende.",
           },
           {
             title: 'Risultato',
             description:
-              "Dopo il match point il risultato è sul telefono e finisce nelle statistiche. Tre partite con l'orologio sono gratis, poi CHF 10 una sola volta.",
+              "Dopo il match point il risultato è sul telefono e finisce nelle statistiche. Tre partite con l'orologio sono gratis, poi lo sblocchi una sola volta per CHF 10 nell'app Klikkr sul telefono.",
           },
         ],
         images: [
           { src: '/app/it/screens/watch_idle.webp', bare: true as const },
-          '/app/it/screens/setup.webp',
+          '/app/it/screens/scoreboard.webp',
           { src: '/app/it/screens/watch_match.webp', bare: true as const },
           '/app/it/screens/summary.webp',
         ],

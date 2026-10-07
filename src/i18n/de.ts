@@ -466,27 +466,27 @@ export const de: Translations = {
           {
             title: 'App auf der Uhr öffnen',
             description:
-              'Öffne Klikkr auf deiner Apple Watch oder Wear-OS-Uhr. Sie wartet, bis auf dem Handy ein Match startet.',
+              'Auf die Apple Watch kommt Klikkr mit der iPhone-App, auf eine Wear-OS-Uhr aus dem Play Store der Uhr. Öffne die App: Sie verbindet sich von selbst mit dem Handy und wartet auf ein Match.',
           },
           {
             title: 'Match am Handy starten',
             description:
-              'Sportart wählen, Spieler zuweisen, starten. Die Uhr zeigt sofort die Farben und Initialen der Spieler.',
+              'Sportart wählen, Spieler zuweisen, starten. Auf dem Handy läuft das Scoreboard, die Uhr zeigt dieselben Spieler in ihren Farben.',
           },
           {
             title: 'Am Handgelenk zählen',
             description:
-              'Tipp oben ist dein Punkt, Tipp unten der Punkt für den Gegner. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert.',
+              'Oben stehen deine Initialen: Tipp oben zählt deinen Punkt, Tipp unten den des Gegners. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert und setzt fort.',
           },
           {
             title: 'Ergebnis',
             description:
-              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach einmalig CHF 10.',
+              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach schaltest du sie in der Klikkr-App auf dem Handy einmalig für CHF 10 frei.',
           },
         ],
         images: [
           { src: '/app/de/screens/watch_idle.webp', bare: true as const },
-          '/app/de/screens/setup.webp',
+          '/app/de/screens/scoreboard.webp',
           { src: '/app/de/screens/watch_match.webp', bare: true as const },
           '/app/de/screens/summary.webp',
         ],

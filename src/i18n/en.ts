@@ -465,27 +465,27 @@ export const en: Translations = {
           {
             title: 'Open the app on your watch',
             description:
-              'Open Klikkr on your Apple Watch or Wear OS watch. It waits until a match starts on your phone.',
+              "On an Apple Watch, Klikkr comes with the iPhone app; on a Wear OS watch, get it from the watch's Play Store. Open it: it connects to your phone on its own and waits for a match.",
           },
           {
             title: 'Start the match on your phone',
             description:
-              "Pick the sport, assign the players, start. The watch shows the players' colours and initials right away.",
+              'Pick the sport, assign the players, start. The scoreboard runs on your phone, and the watch shows the same players in their colours.',
           },
           {
             title: 'Score from your wrist',
             description:
-              "Tap the top for your point, the bottom for your opponent's. A double tap takes back the last point, a long press pauses.",
+              "Your initials are at the top: tap the top for your point, the bottom for your opponent's. A double tap takes back the last point, a long press pauses and resumes.",
           },
           {
             title: 'Result',
             description:
-              'After match point the result is on your phone and in your statistics. Three matches with the watch are free, then a one-time CHF 10.',
+              'After match point the result is on your phone and in your statistics. Three matches with the watch are free, then unlock it once for CHF 10 in the Klikkr app on your phone.',
           },
         ],
         images: [
           { src: '/app/en/screens/watch_idle.webp', bare: true as const },
-          '/app/en/screens/setup.webp',
+          '/app/en/screens/scoreboard.webp',
           { src: '/app/en/screens/watch_match.webp', bare: true as const },
           '/app/en/screens/summary.webp',
         ],
