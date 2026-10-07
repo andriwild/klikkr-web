@@ -108,6 +108,11 @@ export const it: Translations = {
     pricing:
       "Tre partite gratis, poi CHF 10 una sola volta per l'orologio. Nessun abbonamento.",
     compatibility: 'Apple Watch da watchOS 10 · Wear OS dalla versione 3',
+    howTitle: 'Conta con il tuo',
+    howTitleAccent: 'smartwatch',
+    howDescription:
+      "Apri Klikkr sul tuo Apple Watch o sull'orologio Wear OS e avvia la partita sul telefono. Da lì conti dal polso.",
+    howLink: "Come contare con l'orologio",
     bandsHint:
       'Per il doppio o per chi non ha uno smartwatch ci sono i braccialetti Klikkr.',
     bandsLink: 'Vedi i braccialetti',

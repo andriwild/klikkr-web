@@ -107,6 +107,11 @@ export const de: Translations = {
     pricing:
       'Drei Matches gratis, danach einmalig CHF 10 für die Uhr. Kein Abo.',
     compatibility: 'Apple Watch ab watchOS 10 · Wear OS ab Version 3',
+    howTitle: 'Zählen mit der',
+    howTitleAccent: 'Smartwatch',
+    howDescription:
+      'Öffne Klikkr auf deiner Apple Watch oder Wear-OS-Uhr und starte das Match auf dem Handy. Ab dann zählst du am Handgelenk.',
+    howLink: 'So zählst du mit der Uhr',
     bandsHint:
       'Für Doppel oder Spieler ohne Smartwatch gibt es die Klikkr-Armbänder.',
     bandsLink: 'Zu den Armbändern',

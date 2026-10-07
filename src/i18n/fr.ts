@@ -108,6 +108,11 @@ export const fr: Translations = {
     pricing:
       'Trois matchs gratuits, puis CHF 10 une seule fois pour la montre. Sans abonnement.',
     compatibility: 'Apple Watch dès watchOS 10 · Wear OS dès la version 3',
+    howTitle: 'Compter avec votre',
+    howTitleAccent: 'montre connectée',
+    howDescription:
+      'Ouvrez Klikkr sur votre Apple Watch ou votre montre Wear OS et lancez le match sur le téléphone. Ensuite, vous comptez depuis le poignet.',
+    howLink: 'Comment compter avec la montre',
     bandsHint:
       'Pour le double ou les joueurs sans montre connectée, il y a les bracelets Klikkr.',
     bandsLink: 'Voir les bracelets',

@@ -1,4 +1,4 @@
-import { getTranslations, type Locale } from '../i18n'
+import { getLocalizedPath, getTranslations, type Locale } from '../i18n'
 import { StoreBadges } from './AppFeaturesSection'
 
 /**
@@ -7,7 +7,9 @@ import { StoreBadges } from './AppFeaturesSection'
  * It sits right after the system section, where a visitor has just read
  * "band, app, scoreboard" and wonders whether they need the band. The
  * answer here is: not if you already wear a smartwatch. The bands stay
- * in the last line, for doubles and for everyone without a watch.
+ * in the last line, for doubles and for everyone without a watch. How
+ * to score on the watch is an instruction, so it lives on the
+ * how-it-works page (SmartwatchGestures) and this section links there.
  *
  * The picture comes from the app repo's mokkr pipeline
  * (`store_assets/story/web/watch.json`, exported by `export_web.ts`) and
@@ -52,24 +54,16 @@ export function SmartwatchSection({ lang = 'de' }: { lang?: Locale }) {
               </p>
             </div>
 
-            <ul className="grid grid-cols-2 gap-3">
-              {t.gestures.map(
-                (gesture: { title: string; description: string }) => (
-                  <li
-                    key={gesture.title}
-                    className="rounded-2xl border border-zinc-800 bg-zinc-950 px-4 py-3"
-                  >
-                    <p className="font-bold text-zinc-100">{gesture.title}</p>
-                    <p className="text-sm text-zinc-400">
-                      {gesture.description}
-                    </p>
-                  </li>
-                )
-              )}
-            </ul>
-
             <div className="space-y-2">
-              <p className="text-zinc-400">{t.faces}</p>
+              <p className="text-zinc-400">
+                {t.faces}{' '}
+                <a
+                  href={`${getLocalizedPath('/how-it-works', lang)}#smartwatch`}
+                  className="text-emerald-400 underline-offset-4 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/60 rounded-sm"
+                >
+                  {t.howLink}
+                </a>
+              </p>
               <p className="text-lg font-semibold text-zinc-100">{t.pricing}</p>
               <p className="text-sm text-zinc-500">{t.compatibility}</p>
             </div>

@@ -106,6 +106,11 @@ export const en: Translations = {
     pricing:
       'Three matches free, then a one-time CHF 10 for the watch. No subscription.',
     compatibility: 'Apple Watch with watchOS 10 or later · Wear OS 3 or later',
+    howTitle: 'Keep score with your',
+    howTitleAccent: 'smartwatch',
+    howDescription:
+      'Open Klikkr on your Apple Watch or Wear OS watch and start the match on your phone. From then on you score from your wrist.',
+    howLink: 'How to score with the watch',
     bandsHint:
       'For doubles, or players without a smartwatch, there are the Klikkr bands.',
     bandsLink: 'See the bands',

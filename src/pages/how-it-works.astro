@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { GameModes } from '../components/GameModes.tsx';
+import { SmartwatchGestures } from '../components/SmartwatchGestures.tsx';
 import { AppCustomization } from '../components/AppCustomization.tsx';
 import { Footer } from '../components/Footer.tsx';
 ---
 
 <Layout pageKey="howItWorks" currentPage="how-it-works" lang="de">
   <GameModes client:visible lang="de" />
+  <SmartwatchGestures lang="de" />
   <AppCustomization client:visible lang="de" />
   <Footer client:visible slot="footer" lang="de" />
 </Layout>
