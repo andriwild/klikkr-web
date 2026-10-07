@@ -3,7 +3,6 @@ import { SystemSection } from './components/SystemSection'
 import { SmartwatchSection } from './components/SmartwatchSection'
 import { FeaturesSection } from './components/FeaturesSection'
 import { CheckoutSection } from './components/CheckoutSection'
-import { AppFeaturesSection } from './components/AppFeaturesSection'
 import { AppStorySections } from './components/AppStorySections'
 import { NewsletterSection } from './components/NewsletterForm'
 import type { Locale } from './i18n'
@@ -16,7 +15,6 @@ function App({ lang = 'de' }: { lang?: Locale }) {
       <SystemSection lang={lang} />
       <SmartwatchSection lang={lang} />
       <AppStorySections lang={lang} />
-      <AppFeaturesSection lang={lang} />
       <CheckoutSection lang={lang} />
       <NewsletterSection lang={lang} />
     </>

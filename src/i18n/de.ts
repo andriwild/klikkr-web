@@ -69,20 +69,21 @@ export const de: Translations = {
   },
 
   system: {
-    title: 'Armband, App,',
+    title: 'Klikkr, App,',
     titleAccent: 'Scoreboard.',
     description: 'Drei Teile, ein nahtloses Erlebnis — in Sekunden startklar.',
     imageAlt:
-      'Spielerin steuert das Klikkr-Scoreboard per App, Armband am Handgelenk',
+      'Spielerin steuert das Klikkr-Scoreboard per App, Klikkr am Handgelenk',
     steps: [
       {
-        title: 'Armband anlegen',
-        description: 'Trag die Klikkr-Armbänder am Handgelenk.',
+        title: 'Klikkr anlegen',
+        description:
+          'Trag ein Klikkr-Armband oder deine Smartwatch am Handgelenk.',
       },
       {
-        title: 'Per Bluetooth verbinden',
+        title: 'Mit der App verbinden',
         description:
-          'Koppel die Armbänder mit einem Tap an die kostenlose Klikkr-App.',
+          'Das Armband koppelst du mit einem Tap, die Smartwatch verbindet sich von selbst mit der kostenlosen Klikkr-App.',
       },
       {
         title: 'Spiel starten',
@@ -116,7 +117,7 @@ export const de: Translations = {
       'Für Doppel oder Spieler ohne Smartwatch gibt es die Klikkr-Armbänder.',
     bandsLink: 'Zu den Armbändern',
     imageAlt:
-      'Klikkr-Scoreboard auf dem iPhone, daneben eine Apple Watch und eine Wear-OS-Uhr mit demselben Spielstand',
+      'Klikkr-Scoreboard auf dem iPhone, daneben eine Apple Watch mit demselben Spielstand',
   },
 
   features: {
@@ -150,10 +151,6 @@ export const de: Translations = {
   },
 
   appFeatures: {
-    badge: 'Klikkr App',
-    title: 'Die kostenlose Klikkr App.',
-    description:
-      'Die kostenlose Klikkr App verwandelt deine Bluetooth-Armbänder in ein leistungsstarkes, intelligentes Scoreboard. Perfekt konzipiert für schnelle Racketsportarten wie Padel, Tennis und Squash.',
     downloadAppStore: 'Im App Store laden',
     downloadGooglePlay: 'Jetzt bei Google Play',
     scanQrLabel: 'Mit dem Smartphone scannen',
@@ -161,11 +158,11 @@ export const de: Translations = {
   },
 
   appStory: {
-    badge: 'Was die App kann',
+    badge: 'Die kostenlose Klikkr App',
     title: 'Klikkr zählt,',
     titleAccent: 'du spielst.',
     description:
-      'Fünf Dinge, die die App übernimmt, damit du dich nicht darum kümmern musst.',
+      'Die App ist kostenlos und verwandelt deine Klikkr in ein Scoreboard. Fünf Dinge, die sie übernimmt, damit du dich nicht darum kümmern musst.',
     sections: {
       modes: {
         tab: 'Modi',

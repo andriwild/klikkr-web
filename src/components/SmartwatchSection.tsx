@@ -1,5 +1,5 @@
 import { getLocalizedPath, getTranslations, type Locale } from '../i18n'
-import { StoreBadges } from './AppFeaturesSection'
+import { StoreBadges } from './StoreBadges'
 
 /**
  * The smartwatch as a Klikkr, on Apple Watch and Wear OS.
@@ -31,7 +31,7 @@ export function SmartwatchSection({ lang = 'de' }: { lang?: Locale }) {
             <img
               src={`/app/${lang}/watch.webp`}
               alt={t.imageAlt}
-              width={1300}
+              width={1100}
               height={1000}
               loading="lazy"
               className="w-full h-auto"

@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { getTranslations, type Locale } from '../i18n'
+import { StoreBadges } from './StoreBadges'
 
 /**
- * The feature story on the home page: one tab per capability, each
- * explaining exactly one thing and showing it.
+ * The app on the home page: the feature story, one tab per capability,
+ * each explaining exactly one thing and showing it, then the download.
  *
  * Six stacked bands made the page very long for content most visitors
  * only skim, so the sections share one stage and the reader picks.
@@ -29,7 +30,8 @@ const SECTION_IDS = ['summary', 'modes', 'rules', 'stats', 'mirror'] as const
 type SectionId = (typeof SECTION_IDS)[number]
 
 export function AppStorySections({ lang = 'de' }: { lang?: Locale }) {
-  const t = getTranslations(lang).appStory
+  const all = getTranslations(lang)
+  const t = all.appStory
   const [active, setActive] = useState<SectionId>(SECTION_IDS[0])
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
   const sectionRef = useRef<HTMLElement | null>(null)
@@ -238,6 +240,13 @@ export function AppStorySections({ lang = 'de' }: { lang?: Locale }) {
             </div>
           )
         })}
+
+        {/* The download sits under the story, so the section ends on
+            what to do next. It was a section of its own, which split
+            "what the app does" from "get the app" for no reason. */}
+        <div className="mt-12 md:mt-16 border-t border-zinc-800 pt-4">
+          <StoreBadges t={all.appFeatures} />
+        </div>
       </div>
     </section>
   )

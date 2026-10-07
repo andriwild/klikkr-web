@@ -69,21 +69,22 @@ export const it: Translations = {
   },
 
   system: {
-    title: 'Braccialetto, app,',
+    title: 'Klikkr, app,',
     titleAccent: 'tabellone.',
     description:
       "Tre elementi, un'esperienza fluida — pronto in pochi secondi.",
     imageAlt:
-      "Giocatrice che controlla il tabellone Klikkr dall'app, braccialetto al polso",
+      "Giocatrice che controlla il tabellone Klikkr dall'app, Klikkr al polso",
     steps: [
       {
-        title: 'Indossa il braccialetto',
-        description: 'Indossa i braccialetti Klikkr al polso.',
+        title: 'Indossa il tuo Klikkr',
+        description:
+          'Indossa un braccialetto Klikkr o il tuo smartwatch al polso.',
       },
       {
-        title: 'Connetti via Bluetooth',
+        title: "Collegati all'app",
         description:
-          "Abbina i braccialetti all'app gratuita Klikkr con un tap.",
+          "Il braccialetto si abbina con un tap, lo smartwatch si collega da solo all'app gratuita Klikkr.",
       },
       {
         title: 'Avvia la partita',
@@ -117,7 +118,7 @@ export const it: Translations = {
       'Per il doppio o per chi non ha uno smartwatch ci sono i braccialetti Klikkr.',
     bandsLink: 'Vedi i braccialetti',
     imageAlt:
-      'Tabellone Klikkr su un iPhone, accanto a un Apple Watch e a un orologio Wear OS con lo stesso punteggio',
+      'Tabellone Klikkr su un iPhone, accanto a un Apple Watch con lo stesso punteggio',
   },
 
   features: {
@@ -152,10 +153,6 @@ export const it: Translations = {
   },
 
   appFeatures: {
-    badge: 'App compagna digitale',
-    title: "L'app compagna definitiva.",
-    description:
-      "L'app gratuita Klikkr trasforma i tuoi braccialetti Bluetooth in un tabellone segnapunti intelligente e potente. Perfettamente progettata per sport di racchetta veloci.",
     downloadAppStore: "Scarica su l'App Store",
     downloadGooglePlay: 'Disponibile su Google Play',
     scanQrLabel: 'Scansiona con lo smartphone',
@@ -163,11 +160,11 @@ export const it: Translations = {
   },
 
   appStory: {
-    badge: 'Cosa fa l’app',
+    badge: 'L’app gratuita Klikkr',
     title: 'Klikkr conta,',
     titleAccent: 'tu giochi.',
     description:
-      'Cinque cose di cui si occupa l’app, così tu non devi pensarci.',
+      'L’app è gratuita e trasforma i tuoi Klikkr in un tabellone. Cinque cose di cui si occupa, così tu non devi pensarci.',
     sections: {
       modes: {
         tab: 'Modalità',

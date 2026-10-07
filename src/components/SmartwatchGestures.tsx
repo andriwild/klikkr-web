@@ -34,7 +34,7 @@ export function SmartwatchGestures({ lang = 'de' }: { lang?: Locale }) {
           <img
             src={`/app/${lang}/watch.webp`}
             alt={t.imageAlt}
-            width={1300}
+            width={1100}
             height={1000}
             loading="lazy"
             className="w-full h-auto"

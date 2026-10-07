@@ -69,21 +69,22 @@ export const fr: Translations = {
   },
 
   system: {
-    title: 'Bracelet, app,',
+    title: 'Klikkr, app,',
     titleAccent: 'tableau de score.',
     description:
       'Trois éléments, une expérience fluide — prêt en quelques secondes.',
     imageAlt:
-      "Joueuse contrôlant le tableau de score Klikkr depuis l'app, bracelet au poignet",
+      "Joueuse contrôlant le tableau de score Klikkr depuis l'app, Klikkr au poignet",
     steps: [
       {
-        title: 'Mettez le bracelet',
-        description: 'Portez les bracelets Klikkr au poignet.',
+        title: 'Mettez votre Klikkr',
+        description:
+          'Portez un bracelet Klikkr ou votre montre connectée au poignet.',
       },
       {
-        title: 'Connectez en Bluetooth',
+        title: "Connectez-vous à l'app",
         description:
-          "Couplez les bracelets à l'app gratuite Klikkr en un seul tap.",
+          "Le bracelet se couple en un seul tap, la montre connectée se relie toute seule à l'app gratuite Klikkr.",
       },
       {
         title: 'Lancez le match',
@@ -117,7 +118,7 @@ export const fr: Translations = {
       'Pour le double ou les joueurs sans montre connectée, il y a les bracelets Klikkr.',
     bandsLink: 'Voir les bracelets',
     imageAlt:
-      "Tableau de score Klikkr sur un iPhone, à côté d'une Apple Watch et d'une montre Wear OS affichant le même score",
+      "Tableau de score Klikkr sur un iPhone, à côté d'une Apple Watch affichant le même score",
   },
 
   features: {
@@ -151,10 +152,6 @@ export const fr: Translations = {
   },
 
   appFeatures: {
-    badge: 'Application compagnon',
-    title: "L'application compagnon ultime.",
-    description:
-      "L'application gratuite Klikkr transforme vos bracelets Bluetooth en un tableau de score intelligent et puissant. Parfaitement conçue pour les sports de raquette rapides.",
     downloadAppStore: "Télécharger dans l'App Store",
     downloadGooglePlay: 'Disponible sur Google Play',
     scanQrLabel: 'Scanner avec votre smartphone',
@@ -163,11 +160,11 @@ export const fr: Translations = {
   },
 
   appStory: {
-    badge: 'Ce que fait l’application',
+    badge: 'L’application gratuite Klikkr',
     title: 'Klikkr compte,',
     titleAccent: 'vous jouez.',
     description:
-      'Cinq choses dont l’application se charge pour que vous n’ayez pas à y penser.',
+      'L’application est gratuite et transforme vos Klikkr en tableau de score. Cinq choses dont elle se charge pour que vous n’ayez pas à y penser.',
     sections: {
       modes: {
         tab: 'Modes',
