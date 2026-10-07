@@ -124,7 +124,7 @@ export function AppStorySections({ lang = 'de' }: { lang?: Locale }) {
       id="app-story"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="w-full border-t border-zinc-800 bg-zinc-900"
+      className="w-full border-t border-zinc-900 bg-zinc-950"
     >
       <div className="container px-4 md:px-6 mx-auto py-12 md:py-20">
         <div className="flex flex-col items-center text-center space-y-4">
