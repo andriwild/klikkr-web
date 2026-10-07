@@ -490,9 +490,9 @@ export const fr: Translations = {
           },
         ],
         images: [
-          '/app/fr/screens/home.webp',
+          { src: '/app/fr/screens/watch_idle.webp', bare: true as const },
           '/app/fr/screens/setup.webp',
-          '/app/fr/screens/scoreboard.webp',
+          { src: '/app/fr/screens/watch_match.webp', bare: true as const },
           '/app/fr/screens/summary.webp',
         ],
       },

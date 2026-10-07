@@ -71,6 +71,13 @@ const modeColors: Record<
   },
 }
 
+/**
+ * A step's picture: a phone screenshot, drawn inside the CSS phone, or
+ * a picture that already is a device (a framed smartwatch), drawn on
+ * its own while the phone steps aside.
+ */
+type StepImage = string | { src: string; bare: true }
+
 export function GameModes({ lang = 'de' }: { lang?: Locale }) {
   const t = getTranslations(lang).gameModes
   const [activeMode, setActiveMode] = useState<ModeKey>(modeKeys[0])
@@ -81,8 +88,12 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
 
   const mode = t.modes[activeMode]
   const steps = mode.steps
-  const images = mode.images
+  const images: StepImage[] = mode.images
   const colors = modeColors[activeMode]
+  // A step whose picture is a device of its own (the smartwatch) shows
+  // it instead of the phone, so the walkthrough can move between the
+  // two the way a match does.
+  const bareStep = typeof images[activeStep] !== 'string'
 
   // Scrollytelling: observe which step card is in view
   useEffect(() => {
@@ -227,23 +238,41 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
               the side buttons. The screenshots inside carry no frame of
               their own. */}
           <div className="relative w-[300px] sm:w-[350px] md:w-[400px]">
-            <div className="relative rounded-[2.6rem] p-px bg-[linear-gradient(135deg,#7a7a86_0%,#0a0a0d_62%,#2b2b33_100%)] shadow-[0_1px_2px_rgba(0,0,0,0.18),0_4px_8px_rgba(0,0,0,0.13),0_16px_32px_rgba(0,0,0,0.09),0_32px_64px_16px_rgba(0,0,0,0.07)]">
+            {images.map((image, i) =>
+              typeof image === 'string' ? null : (
+                <img
+                  key={`${activeMode}-bare-${i}`}
+                  src={image.src}
+                  alt={steps[i]?.title ?? ''}
+                  className={`absolute inset-0 z-10 w-full h-full object-contain transition-all duration-500 ${
+                    i === activeStep
+                      ? 'opacity-100 scale-100'
+                      : 'opacity-0 scale-95'
+                  }`}
+                />
+              )
+            )}
+            <div
+              className={`relative rounded-[2.6rem] transition-opacity duration-500 ${bareStep ? 'opacity-0' : 'opacity-100'} p-px bg-[linear-gradient(135deg,#7a7a86_0%,#0a0a0d_62%,#2b2b33_100%)] shadow-[0_1px_2px_rgba(0,0,0,0.18),0_4px_8px_rgba(0,0,0,0.13),0_16px_32px_rgba(0,0,0,0.09),0_32px_64px_16px_rgba(0,0,0,0.07)]`}
+            >
               <div className="rounded-[2.55rem] bg-[#17171b] p-[7px]">
                 <div className="relative rounded-[2.15rem] overflow-hidden bg-zinc-900">
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-[#17171b] rounded-b-2xl z-20" />
                   <div className="relative aspect-[9/16]">
-                    {images.map((src: string, i: number) => (
-                      <img
-                        key={`${activeMode}-${i}`}
-                        src={src}
-                        alt={steps[i]?.title ?? ''}
-                        className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ${
-                          i === activeStep
-                            ? 'opacity-100 scale-100'
-                            : 'opacity-0 scale-105'
-                        }`}
-                      />
-                    ))}
+                    {images.map((src, i) =>
+                      typeof src !== 'string' ? null : (
+                        <img
+                          key={`${activeMode}-${i}`}
+                          src={src}
+                          alt={steps[i]?.title ?? ''}
+                          className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ${
+                            i === activeStep
+                              ? 'opacity-100 scale-100'
+                              : 'opacity-0 scale-105'
+                          }`}
+                        />
+                      )
+                    )}
                   </div>
                   {/* Depth ring: without it the screenshot sits on the
                       casing like a sticker instead of behind glass. */}
