@@ -8,7 +8,8 @@ import { getLocalizedPath, getTranslations, type Locale } from '../i18n'
  * answer here is: not if you already wear a smartwatch. The bands stay
  * in the last line, for doubles and for everyone without a watch. How
  * to score on the watch is an instruction, so it lives on the
- * how-it-works page (SmartwatchGestures) and this section links there.
+ * how-it-works page (the Smartwatch tab of GameModes) and this section
+ * links there.
  *
  * It follows the app section directly, whose store badges are the one
  * download call on the page, so this section carries none of its own.

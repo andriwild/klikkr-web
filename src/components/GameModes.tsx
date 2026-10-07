@@ -1,17 +1,27 @@
 import { useEffect, useRef, useState } from 'react'
-import { Hand, Watch, Trophy } from 'lucide-react'
+import { CircleDot, Hand, Watch, Trophy } from 'lucide-react'
 import { getTranslations, type Locale } from '../i18n'
 import { track } from '../lib/analytics'
 
-// Order matters: the wristband modes are what the product is for,
-// swipe is the fallback for when you have none, so it closes the row.
-const modeKeys = ['oneBeacon', 'twoBeacons', 'tournament', 'swipe'] as const
+// Order matters: the app leads and the smartwatch is the first way to
+// score with it, the wristband modes follow as the backup, and swipe is
+// the fallback for when you have neither, so it closes the row.
+const modeKeys = [
+  'smartwatch',
+  'oneBeacon',
+  'twoBeacons',
+  'tournament',
+  'swipe',
+] as const
 type ModeKey = (typeof modeKeys)[number]
 
+// The watch icon belongs to the smartwatch; a Klikkr wristband is a
+// round puck, which CircleDot draws.
 const modeIcons: Record<ModeKey, typeof Hand> = {
+  smartwatch: Watch,
   swipe: Hand,
-  oneBeacon: Watch,
-  twoBeacons: Watch,
+  oneBeacon: CircleDot,
+  twoBeacons: CircleDot,
   tournament: Trophy,
 }
 
@@ -24,6 +34,13 @@ const modeColors: Record<
   // floats over a screenshot: it needs an opaque base or the text
   // underneath bleeds through and neither layer can be read. The accent
   // survives as the border and a faint wash.
+  smartwatch: {
+    active: 'border-violet-500/40 bg-violet-500/10 text-violet-400',
+    card: 'border-violet-500/50 bg-zinc-950/90 ring-1 ring-violet-500/20',
+    tab: 'border-violet-400 text-zinc-50',
+    glow: 'from-violet-500/10 to-fuchsia-500/10',
+    accent: 'bg-violet-500',
+  },
   swipe: {
     active: 'border-cyan-500/40 bg-cyan-500/10 text-cyan-400',
     card: 'border-cyan-500/50 bg-zinc-950/90 ring-1 ring-cyan-500/20',
@@ -122,6 +139,9 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
   return (
     <section
       ref={sectionRef}
+      // The home page links here as #smartwatch; the smartwatch is the
+      // first mode, so the anchor lands on it without further help.
+      id="smartwatch"
       className="relative w-full bg-zinc-950 text-zinc-50"
     >
       {/* Header */}

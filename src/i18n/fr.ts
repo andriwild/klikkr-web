@@ -99,20 +99,10 @@ export const fr: Translations = {
     titleAccent: 'Klikkr.',
     description:
       'Pas de bracelet sous la main ? Avec votre Apple Watch ou votre montre Wear OS, vous comptez les points directement au poignet.',
-    gestures: [
-      { title: 'Toucher en haut', description: 'Votre point.' },
-      { title: 'Toucher en bas', description: "Point pour l'adversaire." },
-      { title: 'Double toucher', description: 'Annuler le dernier point.' },
-      { title: 'Appui long', description: 'Pause.' },
-    ],
     faces: 'La montre affiche les couleurs et les initiales des joueurs.',
     pricing:
       'Trois matchs gratuits, puis CHF 10 une seule fois pour la montre. Sans abonnement.',
     compatibility: 'Apple Watch dès watchOS 10 · Wear OS dès la version 3',
-    howTitle: 'Compter avec votre',
-    howTitleAccent: 'montre connectée',
-    howDescription:
-      'Ouvrez Klikkr sur votre Apple Watch ou votre montre Wear OS et lancez le match sur le téléphone. Ensuite, vous comptez depuis le poignet.',
     howLink: 'Comment compter avec la montre',
     bandsHint:
       'Pour le double ou les joueurs sans montre connectée, il y a les bracelets Klikkr.',
@@ -471,8 +461,41 @@ export const fr: Translations = {
     title: 'Comment veux-tu',
     titleAccent: 'jouer ?',
     description:
-      "Avec ou sans beacon, en solo ou en tournoi — l'app Klikkr s'adapte à ton setup.",
+      "Avec une montre connectée, un bracelet ou rien du tout, en solo ou en tournoi — l'app Klikkr s'adapte à ton setup.",
     modes: {
+      smartwatch: {
+        label: 'Montre connectée',
+        description:
+          'Apple Watch ou montre Wear OS comme Klikkr — sans bracelet.',
+        steps: [
+          {
+            title: "Ouvre l'app sur la montre",
+            description:
+              "Ouvre Klikkr sur ton Apple Watch ou ta montre Wear OS. Elle attend qu'un match démarre sur le téléphone.",
+          },
+          {
+            title: 'Lance le match sur le téléphone',
+            description:
+              'Choisis le sport, attribue les joueurs, lance. La montre affiche aussitôt les couleurs et les initiales des joueurs.',
+          },
+          {
+            title: 'Compte au poignet',
+            description:
+              "Touche en haut pour ton point, en bas pour celui de l'adversaire. Un double toucher annule le dernier point, un appui long met en pause.",
+          },
+          {
+            title: 'Résultat',
+            description:
+              "Après la balle de match, le résultat s'affiche sur le téléphone et rejoint tes statistiques. Trois matchs avec la montre sont gratuits, ensuite CHF 10 une seule fois.",
+          },
+        ],
+        images: [
+          '/app/fr/screens/home.webp',
+          '/app/fr/screens/setup.webp',
+          '/app/fr/screens/scoreboard.webp',
+          '/app/fr/screens/summary.webp',
+        ],
+      },
       swipe: {
         label: 'Swipe',
         description: 'Score manuellement sur ton téléphone — sans beacon.',

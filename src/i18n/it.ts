@@ -99,20 +99,10 @@ export const it: Translations = {
     titleAccent: 'Klikkr.',
     description:
       'Niente braccialetto a portata di mano? Con il tuo Apple Watch o un orologio Wear OS conti i punti direttamente al polso.',
-    gestures: [
-      { title: 'Tocco in alto', description: 'Il tuo punto.' },
-      { title: 'Tocco in basso', description: "Punto per l'avversario." },
-      { title: 'Doppio tocco', description: "Annulla l'ultimo punto." },
-      { title: 'Pressione lunga', description: 'Pausa.' },
-    ],
     faces: "L'orologio mostra i colori e le iniziali dei giocatori.",
     pricing:
       "Tre partite gratis, poi CHF 10 una sola volta per l'orologio. Nessun abbonamento.",
     compatibility: 'Apple Watch da watchOS 10 · Wear OS dalla versione 3',
-    howTitle: 'Conta con il tuo',
-    howTitleAccent: 'smartwatch',
-    howDescription:
-      "Apri Klikkr sul tuo Apple Watch o sull'orologio Wear OS e avvia la partita sul telefono. Da lì conti dal polso.",
     howLink: "Come contare con l'orologio",
     bandsHint:
       'Per il doppio o per chi non ha uno smartwatch ci sono i braccialetti Klikkr.',
@@ -473,8 +463,41 @@ export const it: Translations = {
     title: 'Come vuoi',
     titleAccent: 'giocare?',
     description:
-      "Con o senza beacon, da solo o in torneo — l'app Klikkr si adatta al tuo setup.",
+      "Con uno smartwatch, un braccialetto o niente, da solo o in torneo — l'app Klikkr si adatta al tuo setup.",
     modes: {
+      smartwatch: {
+        label: 'Smartwatch',
+        description:
+          'Apple Watch o orologio Wear OS come Klikkr — senza braccialetto.',
+        steps: [
+          {
+            title: "Apri l'app sull'orologio",
+            description:
+              "Apri Klikkr sul tuo Apple Watch o sull'orologio Wear OS. Aspetta che sul telefono parta una partita.",
+          },
+          {
+            title: 'Avvia la partita sul telefono',
+            description:
+              "Scegli lo sport, assegna i giocatori, avvia. L'orologio mostra subito i colori e le iniziali dei giocatori.",
+          },
+          {
+            title: 'Conta dal polso',
+            description:
+              "Tocca in alto per il tuo punto, in basso per quello dell'avversario. Un doppio tocco annulla l'ultimo punto, una pressione lunga mette in pausa.",
+          },
+          {
+            title: 'Risultato',
+            description:
+              "Dopo il match point il risultato è sul telefono e finisce nelle statistiche. Tre partite con l'orologio sono gratis, poi CHF 10 una sola volta.",
+          },
+        ],
+        images: [
+          '/app/it/screens/home.webp',
+          '/app/it/screens/setup.webp',
+          '/app/it/screens/scoreboard.webp',
+          '/app/it/screens/summary.webp',
+        ],
+      },
       swipe: {
         label: 'Swipe',
         description: 'Segna manualmente sul telefono — senza beacon.',

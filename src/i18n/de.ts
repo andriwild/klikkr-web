@@ -98,20 +98,10 @@ export const de: Translations = {
     titleAccent: 'Klikkr.',
     description:
       'Kein Armband zur Hand? Mit deiner Apple Watch oder Wear-OS-Uhr zählst du direkt am Handgelenk.',
-    gestures: [
-      { title: 'Tipp oben', description: 'Dein Punkt.' },
-      { title: 'Tipp unten', description: 'Punkt für den Gegner.' },
-      { title: 'Doppeltipp', description: 'Letzten Punkt zurücknehmen.' },
-      { title: 'Lang drücken', description: 'Pause.' },
-    ],
     faces: 'Die Uhr zeigt die Farben und Initialen der Spieler.',
     pricing:
       'Drei Matches gratis, danach einmalig CHF 10 für die Uhr. Kein Abo.',
     compatibility: 'Apple Watch ab watchOS 10 · Wear OS ab Version 3',
-    howTitle: 'Zählen mit der',
-    howTitleAccent: 'Smartwatch',
-    howDescription:
-      'Öffne Klikkr auf deiner Apple Watch oder Wear-OS-Uhr und starte das Match auf dem Handy. Ab dann zählst du am Handgelenk.',
     howLink: 'So zählst du mit der Uhr',
     bandsHint:
       'Für Doppel oder Spieler ohne Smartwatch gibt es die Klikkr-Armbänder.',
@@ -467,8 +457,40 @@ export const de: Translations = {
     title: 'Wie willst du',
     titleAccent: 'spielen?',
     description:
-      'Ob mit oder ohne Beacon, alleine oder im Turnier — die Klikkr App passt sich deinem Setup an.',
+      'Mit Smartwatch, Armband oder ganz ohne, allein oder im Turnier — die Klikkr App passt sich deinem Setup an.',
     modes: {
+      smartwatch: {
+        label: 'Smartwatch',
+        description: 'Apple Watch oder Wear-OS-Uhr als Klikkr — ohne Armband.',
+        steps: [
+          {
+            title: 'App auf der Uhr öffnen',
+            description:
+              'Öffne Klikkr auf deiner Apple Watch oder Wear-OS-Uhr. Sie wartet, bis auf dem Handy ein Match startet.',
+          },
+          {
+            title: 'Match am Handy starten',
+            description:
+              'Sportart wählen, Spieler zuweisen, starten. Die Uhr zeigt sofort die Farben und Initialen der Spieler.',
+          },
+          {
+            title: 'Am Handgelenk zählen',
+            description:
+              'Tipp oben ist dein Punkt, Tipp unten der Punkt für den Gegner. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert.',
+          },
+          {
+            title: 'Ergebnis',
+            description:
+              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach einmalig CHF 10.',
+          },
+        ],
+        images: [
+          '/app/de/screens/home.webp',
+          '/app/de/screens/setup.webp',
+          '/app/de/screens/scoreboard.webp',
+          '/app/de/screens/summary.webp',
+        ],
+      },
       swipe: {
         label: 'Swipe',
         description: 'Manuell auf dem Handy scoren — ganz ohne Beacon.',

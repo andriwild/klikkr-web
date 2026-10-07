@@ -97,20 +97,10 @@ export const en: Translations = {
     titleAccent: 'Klikkr.',
     description:
       'No band at hand? With your Apple Watch or Wear OS watch you keep score right on your wrist.',
-    gestures: [
-      { title: 'Tap top', description: 'Your point.' },
-      { title: 'Tap bottom', description: 'Point for your opponent.' },
-      { title: 'Double tap', description: 'Take back the last point.' },
-      { title: 'Long press', description: 'Pause.' },
-    ],
     faces: "The watch shows the players' colours and initials.",
     pricing:
       'Three matches free, then a one-time CHF 10 for the watch. No subscription.',
     compatibility: 'Apple Watch with watchOS 10 or later · Wear OS 3 or later',
-    howTitle: 'Keep score with your',
-    howTitleAccent: 'smartwatch',
-    howDescription:
-      'Open Klikkr on your Apple Watch or Wear OS watch and start the match on your phone. From then on you score from your wrist.',
     howLink: 'How to score with the watch',
     bandsHint:
       'For doubles, or players without a smartwatch, there are the Klikkr bands.',
@@ -465,8 +455,41 @@ export const en: Translations = {
     title: 'How do you want to',
     titleAccent: 'play?',
     description:
-      'With or without a beacon, solo or tournament — the Klikkr app adapts to your setup.',
+      'With a smartwatch, a wristband or neither, solo or tournament — the Klikkr app adapts to your setup.',
     modes: {
+      smartwatch: {
+        label: 'Smartwatch',
+        description:
+          'Apple Watch or Wear OS watch as your Klikkr — no wristband needed.',
+        steps: [
+          {
+            title: 'Open the app on your watch',
+            description:
+              'Open Klikkr on your Apple Watch or Wear OS watch. It waits until a match starts on your phone.',
+          },
+          {
+            title: 'Start the match on your phone',
+            description:
+              "Pick the sport, assign the players, start. The watch shows the players' colours and initials right away.",
+          },
+          {
+            title: 'Score from your wrist',
+            description:
+              "Tap the top for your point, the bottom for your opponent's. A double tap takes back the last point, a long press pauses.",
+          },
+          {
+            title: 'Result',
+            description:
+              'After match point the result is on your phone and in your statistics. Three matches with the watch are free, then a one-time CHF 10.',
+          },
+        ],
+        images: [
+          '/app/en/screens/home.webp',
+          '/app/en/screens/setup.webp',
+          '/app/en/screens/scoreboard.webp',
+          '/app/en/screens/summary.webp',
+        ],
+      },
       swipe: {
         label: 'Swipe',
         description: 'Score manually on your phone — no beacon needed.',
