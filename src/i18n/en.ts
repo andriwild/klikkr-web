@@ -470,22 +470,22 @@ export const en: Translations = {
           {
             title: 'Start the match on your phone',
             description:
-              'Pick the sport, assign the players, start. The scoreboard runs on your phone, and the watch shows the same players in their colours.',
+              'Pick the sport, assign the players, start. Your phone shows the score, the watch shows the same players in their colours. One watch is enough for the whole match, doubles included.',
           },
           {
             title: 'Score from your wrist',
             description:
-              "Your initials are at the top: tap the top for your point, the bottom for your opponent's. A double tap takes back the last point, a long press pauses and resumes.",
+              "Your initials are at the top, in doubles with your partner's: tap the top for your side's point, the bottom for the opponents'. A double tap takes back the last point, a long press pauses and resumes.",
           },
           {
             title: 'Result',
             description:
-              'After match point the result is on your phone and in your statistics. Three matches with the watch are free, then unlock it once for CHF 10 in the Klikkr app on your phone.',
+              'After match point the result is on your phone and in your statistics. Three matches with the watch are free, then unlock it once for CHF 10 in the Klikkr app on your phone, for your Apple ID or Google account.',
           },
         ],
         images: [
           { src: '/app/en/screens/watch_idle.webp', bare: true as const },
-          '/app/en/screens/scoreboard.webp',
+          { src: '/app/en/screens/watch_pair.webp', bare: true as const },
           { src: '/app/en/screens/watch_match.webp', bare: true as const },
           '/app/en/screens/summary.webp',
         ],

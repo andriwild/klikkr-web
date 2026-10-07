@@ -476,22 +476,22 @@ export const fr: Translations = {
           {
             title: 'Lance le match sur le téléphone',
             description:
-              'Choisis le sport, attribue les joueurs, lance. Le tableau de score tourne sur le téléphone, la montre affiche les mêmes joueurs dans leurs couleurs.',
+              'Choisis le sport, attribue les joueurs, lance. Le téléphone affiche le score, la montre les mêmes joueurs dans leurs couleurs. Une seule montre suffit pour tout le match, même en double.',
           },
           {
             title: 'Compte au poignet',
             description:
-              "Tes initiales sont en haut : touche en haut pour ton point, en bas pour celui de l'adversaire. Un double toucher annule le dernier point, un appui long met en pause et relance.",
+              'Tes initiales sont en haut, en double avec celles de ton partenaire : touche en haut pour votre point, en bas pour celui des adversaires. Un double toucher annule le dernier point, un appui long met en pause et relance.',
           },
           {
             title: 'Résultat',
             description:
-              "Après la balle de match, le résultat s'affiche sur le téléphone et rejoint tes statistiques. Trois matchs avec la montre sont gratuits, ensuite tu la débloques une seule fois pour CHF 10 dans l'app Klikkr du téléphone.",
+              "Après la balle de match, le résultat s'affiche sur le téléphone et rejoint tes statistiques. Trois matchs avec la montre sont gratuits, ensuite tu la débloques une seule fois pour CHF 10 dans l'app Klikkr du téléphone, pour ton identifiant Apple ou ton compte Google.",
           },
         ],
         images: [
           { src: '/app/fr/screens/watch_idle.webp', bare: true as const },
-          '/app/fr/screens/scoreboard.webp',
+          { src: '/app/fr/screens/watch_pair.webp', bare: true as const },
           { src: '/app/fr/screens/watch_match.webp', bare: true as const },
           '/app/fr/screens/summary.webp',
         ],

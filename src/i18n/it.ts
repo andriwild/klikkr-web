@@ -478,22 +478,22 @@ export const it: Translations = {
           {
             title: 'Avvia la partita sul telefono',
             description:
-              "Scegli lo sport, assegna i giocatori, avvia. Sul telefono gira il tabellone, l'orologio mostra gli stessi giocatori nei loro colori.",
+              "Scegli lo sport, assegna i giocatori, avvia. Il punteggio è sul telefono, l'orologio mostra gli stessi giocatori nei loro colori. Basta un orologio per tutta la partita, anche in doppio.",
           },
           {
             title: 'Conta dal polso',
             description:
-              "In alto ci sono le tue iniziali: tocca in alto per il tuo punto, in basso per quello dell'avversario. Un doppio tocco annulla l'ultimo punto, una pressione lunga mette in pausa e riprende.",
+              "In alto ci sono le tue iniziali, in doppio con quelle del tuo compagno: tocca in alto per il punto della tua squadra, in basso per quello degli avversari. Un doppio tocco annulla l'ultimo punto, una pressione lunga mette in pausa e riprende.",
           },
           {
             title: 'Risultato',
             description:
-              "Dopo il match point il risultato è sul telefono e finisce nelle statistiche. Tre partite con l'orologio sono gratis, poi lo sblocchi una sola volta per CHF 10 nell'app Klikkr sul telefono.",
+              "Dopo il match point il risultato è sul telefono e finisce nelle statistiche. Tre partite con l'orologio sono gratis, poi lo sblocchi una sola volta per CHF 10 nell'app Klikkr sul telefono, per il tuo ID Apple o account Google.",
           },
         ],
         images: [
           { src: '/app/it/screens/watch_idle.webp', bare: true as const },
-          '/app/it/screens/scoreboard.webp',
+          { src: '/app/it/screens/watch_pair.webp', bare: true as const },
           { src: '/app/it/screens/watch_match.webp', bare: true as const },
           '/app/it/screens/summary.webp',
         ],

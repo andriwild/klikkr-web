@@ -471,22 +471,22 @@ export const de: Translations = {
           {
             title: 'Match am Handy starten',
             description:
-              'Sportart wählen, Spieler zuweisen, starten. Auf dem Handy läuft das Scoreboard, die Uhr zeigt dieselben Spieler in ihren Farben.',
+              'Sportart wählen, Spieler zuweisen, starten. Den Spielstand zeigt das Handy, die Uhr zeigt dieselben Spieler in ihren Farben. Eine Uhr reicht fürs ganze Match, auch im Doppel.',
           },
           {
             title: 'Am Handgelenk zählen',
             description:
-              'Oben stehen deine Initialen: Tipp oben zählt deinen Punkt, Tipp unten den des Gegners. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert und setzt fort.',
+              'Oben stehen deine Initialen, im Doppel mit denen deines Partners: Tipp oben zählt den Punkt für euch, Tipp unten für die Gegner. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert und setzt fort.',
           },
           {
             title: 'Ergebnis',
             description:
-              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach schaltest du sie in der Klikkr-App auf dem Handy einmalig für CHF 10 frei.',
+              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach schaltest du sie in der Klikkr-App auf dem Handy einmalig für CHF 10 frei, gültig für deine Apple-ID bzw. dein Google-Konto.',
           },
         ],
         images: [
           { src: '/app/de/screens/watch_idle.webp', bare: true as const },
-          '/app/de/screens/scoreboard.webp',
+          { src: '/app/de/screens/watch_pair.webp', bare: true as const },
           { src: '/app/de/screens/watch_match.webp', bare: true as const },
           '/app/de/screens/summary.webp',
         ],

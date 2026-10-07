@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { CircleDot, Hand, Watch, Trophy } from 'lucide-react'
 import { getTranslations, type Locale } from '../i18n'
 import { track } from '../lib/analytics'
@@ -71,6 +71,45 @@ const modeColors: Record<
   },
 }
 
+const WIDE = '(min-width: 1024px)'
+function subscribeWide(onChange: () => void) {
+  const query = window.matchMedia(WIDE)
+  query.addEventListener('change', onChange)
+  return () => query.removeEventListener('change', onChange)
+}
+function isWide() {
+  return window.matchMedia(WIDE).matches
+}
+
+/**
+ * The picture of one step on a narrow screen, above its card: a phone
+ * screenshot in a plain frame, or a device picture as it is. From lg on
+ * the sticky device shows the pictures instead.
+ */
+function StepPicture({ image, alt }: { image?: StepImage; alt: string }) {
+  if (!image) return null
+  if (typeof image !== 'string') {
+    return (
+      <img
+        src={image.src}
+        alt={alt}
+        loading="lazy"
+        className="lg:hidden w-56 h-auto"
+      />
+    )
+  }
+  return (
+    <div className="lg:hidden w-48 rounded-[1.6rem] bg-[#17171b] p-[5px] ring-1 ring-zinc-700 shadow-2xl shadow-black/60">
+      <img
+        src={image}
+        alt={alt}
+        loading="lazy"
+        className="w-full aspect-[9/16] object-cover rounded-[1.3rem]"
+      />
+    </div>
+  )
+}
+
 /**
  * A step's picture: a phone screenshot, drawn inside the CSS phone, or
  * a picture that already is a device (a framed smartwatch), drawn on
@@ -85,6 +124,11 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
   const stepsRef = useRef<(HTMLDivElement | null)[]>([])
   const sectionRef = useRef<HTMLDivElement | null>(null)
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
+
+  // Only the side-by-side layout (lg) highlights the step in view; on a
+  // narrow screen every card stands with its own picture and reads as
+  // active.
+  const wide = useSyncExternalStore(subscribeWide, isWide, () => true)
 
   const mode = t.modes[activeMode]
   const steps = mode.steps
@@ -105,15 +149,7 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
         ([entry]) => {
           if (entry.isIntersecting) setActiveStep(i)
         },
-        // Side by side (lg) the card is active in the middle band. On a
-        // narrow screen the device sits in the upper half, so a card is
-        // only active once it is in the lower half and never covers it.
-        {
-          rootMargin: window.matchMedia('(min-width: 1024px)').matches
-            ? '-40% 0px -40% 0px'
-            : '-62% 0px -18% 0px',
-          threshold: 0,
-        }
+        { rootMargin: '-40% 0px -40% 0px', threshold: 0 }
       )
       observer.observe(el)
       observers.push(observer)
@@ -237,19 +273,19 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
         role="tabpanel"
         aria-labelledby={`mode-tab-${activeMode}`}
       >
-        {/* Sticky device. Side by side from lg on, the device on the
-            right and the cards on the left, so a card never covers the
-            screen it explains. Narrower, the device sits in the upper
-            half and the cards pass below it, and behind it once they
-            are done, so a finished card never covers the device. */}
-        <div className="sticky top-0 h-screen flex items-start pt-32 lg:items-center lg:pt-0 justify-center lg:justify-end lg:pr-[max(3rem,calc((100vw-72rem)/2+3rem))] pointer-events-none z-20 lg:z-0">
+        {/* Sticky device, from lg on only: the device on the right, the
+            cards scrolling past on the left, so a card never covers the
+            screen it explains. A narrow screen has no room beside the
+            device, and a device on top of the cards hid their text, so
+            there every card carries its own picture instead (below). */}
+        <div className="hidden lg:flex sticky top-0 h-screen items-center justify-end lg:pr-[max(3rem,calc((100vw-72rem)/2+3rem))] pointer-events-none z-0">
           {/* The phone is drawn in CSS, in layers, because one bordered
               rounded rectangle reads as a rectangle: a metallic bevel
               catching light from the top left, a matte body, a screen
               recessed by an inset ring, one hard-edged glass glint and
               the side buttons. The screenshots inside carry no frame of
               their own. */}
-          <div className="relative w-[200px] sm:w-[240px] lg:w-[360px]">
+          <div className="relative w-[360px]">
             {images.map((image, i) =>
               typeof image === 'string' ? null : (
                 <img
@@ -318,10 +354,10 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
           </div>
         </div>
 
-        {/* Scrollable text cards: beside the device from lg on, below
-            it on narrower screens */}
-        <div className="relative z-10 -mt-[100vh]">
-          <div className="h-[10vh]" />
+        {/* Scrollable text cards: beside the sticky device from lg on,
+            one under the other with their own picture below that */}
+        <div className="relative z-10 lg:-mt-[100vh] pb-16 lg:pb-0">
+          <div className="hidden lg:block h-[10vh]" />
 
           {steps.map(
             (step: { title: string; description: string }, i: number) => (
@@ -330,11 +366,12 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
                 ref={(el) => {
                   stepsRef.current[i] = el
                 }}
-                className="min-h-[60vh] flex items-center justify-center lg:justify-start px-4 lg:pl-[max(3rem,calc((100vw-72rem)/2+3rem))]"
+                className="lg:min-h-[60vh] flex flex-col items-center lg:flex-row lg:justify-start gap-6 px-4 pt-12 lg:pt-0 lg:pl-[max(3rem,calc((100vw-72rem)/2+3rem))]"
               >
+                <StepPicture image={images[i]} alt={step.title} />
                 <div
                   className={`max-w-md w-full p-6 md:p-8 rounded-2xl border backdrop-blur-xl transition-all duration-500 ${
-                    i === activeStep
+                    i === activeStep || !wide
                       ? `${colors.card} shadow-2xl shadow-black/60`
                       : 'border-zinc-800/50 bg-zinc-950/80'
                   }`}
@@ -342,14 +379,16 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
                   <div className="flex items-start gap-4">
                     <div
                       className={`flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-xl transition-colors duration-500 ${
-                        i === activeStep
+                        i === activeStep || !wide
                           ? 'bg-white/10 border border-white/20'
                           : 'bg-zinc-800/50 border border-zinc-700/30'
                       }`}
                     >
                       <span
                         className={`text-lg font-extrabold transition-colors duration-500 ${
-                          i === activeStep ? 'text-white' : 'text-zinc-500'
+                          i === activeStep || !wide
+                            ? 'text-white'
+                            : 'text-zinc-500'
                         }`}
                       >
                         {String(i + 1).padStart(2, '0')}
@@ -358,14 +397,18 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
                     <div className="space-y-2">
                       <h3
                         className={`text-xl font-bold tracking-tight transition-colors duration-500 ${
-                          i === activeStep ? 'text-zinc-100' : 'text-zinc-400'
+                          i === activeStep || !wide
+                            ? 'text-zinc-100'
+                            : 'text-zinc-400'
                         }`}
                       >
                         {step.title}
                       </h3>
                       <p
                         className={`leading-relaxed font-medium transition-colors duration-500 ${
-                          i === activeStep ? 'text-zinc-300' : 'text-zinc-500'
+                          i === activeStep || !wide
+                            ? 'text-zinc-300'
+                            : 'text-zinc-500'
                         }`}
                       >
                         {step.description}
