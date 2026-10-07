@@ -228,7 +228,7 @@ export function GameModes({ lang = 'de' }: { lang?: Locale }) {
           role="tablist"
           aria-label={t.badge}
           onKeyDown={onTabKeyDown}
-          className="mt-8 flex gap-6 md:gap-10 overflow-x-auto border-b border-zinc-800 -mx-4 px-4 md:mx-0 md:px-0 md:justify-center"
+          className="mt-8 flex gap-6 md:gap-10 overflow-x-auto overflow-y-hidden scrollbar-none border-b border-zinc-800 -mx-4 px-4 md:mx-0 md:px-0 md:justify-center"
         >
           {modeKeys.map((key, i) => {
             const Icon = modeIcons[key]
