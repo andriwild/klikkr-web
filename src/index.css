@@ -71,3 +71,14 @@
     transform: scaleX(1);
   }
 }
+
+/* Tab rows scroll sideways on a narrow screen. The scrollbar is no
+   help there and showed as a stray bar beside the tabs. */
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}

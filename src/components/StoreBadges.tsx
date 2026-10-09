@@ -1,11 +1,16 @@
-import { getTranslations, type Locale } from '../i18n'
+import type { getTranslations } from '../i18n'
 import { track } from '../lib/analytics'
 
+/**
+ * App Store and Google Play badges, and the QR code on wide screens.
+ * Shared by the app section and the smartwatch section, so the links
+ * and the click tracking exist once.
+ */
 const APP_STORE_URL = 'https://apps.apple.com/ch/app/klikkr/id6761069158'
 const GOOGLE_PLAY_URL =
   'https://play.google.com/store/apps/details?id=ch.wild.klikkr'
 
-function StoreBadges({
+export function StoreBadges({
   t,
 }: {
   t: ReturnType<typeof getTranslations>['appFeatures']
@@ -62,37 +67,5 @@ function StoreBadges({
         </span>
       </div>
     </div>
-  )
-}
-
-/**
- * The download block: badge, one paragraph, store badges and the QR.
- *
- * It used to carry a six-tile feature grid whose claims described the
- * app as it was two rewrites ago, plus an AI-generated preview image
- * with English text burned into it. The feature story is now
- * AppStorySections, built from real screenshots per locale.
- */
-export function AppFeaturesSection({ lang = 'de' }: { lang?: Locale }) {
-  const t = getTranslations(lang).appFeatures
-
-  return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-950 border-t border-zinc-900">
-      <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="inline-block rounded-lg bg-emerald-500/10 px-3 py-1 text-sm text-emerald-400 border border-emerald-500/20">
-            {t.badge}
-          </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-            {t.title}
-          </h2>
-          <p className="max-w-[700px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-            {t.description}
-          </p>
-
-          <StoreBadges t={t} />
-        </div>
-      </div>
-    </section>
   )
 }

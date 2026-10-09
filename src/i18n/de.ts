@@ -69,20 +69,21 @@ export const de: Translations = {
   },
 
   system: {
-    title: 'Armband, App,',
+    title: 'Klikkr, App,',
     titleAccent: 'Scoreboard.',
     description: 'Drei Teile, ein nahtloses Erlebnis — in Sekunden startklar.',
     imageAlt:
-      'Spielerin steuert das Klikkr-Scoreboard per App, Armband am Handgelenk',
+      'Spielerin steuert das Klikkr-Scoreboard per App, Klikkr am Handgelenk',
     steps: [
       {
-        title: 'Armband anlegen',
-        description: 'Trag die Klikkr-Armbänder am Handgelenk.',
+        title: 'Klikkr anlegen',
+        description:
+          'Trag ein Klikkr-Armband oder deine Smartwatch am Handgelenk.',
       },
       {
-        title: 'Per Bluetooth verbinden',
+        title: 'Mit der App verbinden',
         description:
-          'Koppel die Armbänder mit einem Tap an die kostenlose Klikkr-App.',
+          'Das Armband koppelst du mit einem Tap, die Smartwatch verbindet sich von selbst mit der kostenlosen Klikkr-App.',
       },
       {
         title: 'Spiel starten',
@@ -91,41 +92,24 @@ export const de: Translations = {
     ],
   },
 
-  features: {
-    badge: 'Für alle, die spielen',
-    title: 'Gemacht für deinen',
-    titleAccent: 'Sport',
+  smartwatch: {
+    badge: 'Neu',
+    title: 'Deine Smartwatch ist ein',
+    titleAccent: 'Klikkr.',
     description:
-      'Behalte den Score im Blick, ohne mitzuzählen. Ein Klick pro Punkt — den Rest erledigt die App.',
-    moreSports:
-      'Funktioniert mit jedem Racketsport — auch Tennis, Tischtennis & Pickleball.',
-    items: [
-      {
-        title: 'Padel',
-        imageAlt: 'Padel-Spieler nutzt Klikkr Score-Tracker am Handgelenk',
-        description:
-          'Verliere bei langen Duellen nicht den Überblick. Konzentrier dich auf deinen Smash, wir zählen den Score.',
-      },
-      {
-        title: 'Squash',
-        imageAlt: 'Klikkr Armband beim Squash-Spiel im Einsatz',
-        description:
-          'Behalte den Überblick über jedes intensive Rally. Ein Klick und du bist bereit für den nächsten Aufschlag.',
-      },
-      {
-        title: 'Badminton',
-        imageAlt: 'Klikkr Armband beim Badminton-Spiel im Einsatz',
-        description:
-          'Behalte den Überblick bei jedem schnellen Ballwechsel. Ein Klick und der Punkt ist gezählt.',
-      },
-    ],
+      'Kein Armband zur Hand? Mit deiner Apple Watch oder Wear-OS-Uhr zählst du direkt am Handgelenk.',
+    faces: 'Die Uhr zeigt die Farben und Initialen der Spieler.',
+    pricing:
+      'Drei Matches gratis, danach einmalig CHF 10 für die Uhr. Kein Abo.',
+    compatibility: 'Apple Watch ab watchOS 10 · Wear OS ab Version 3',
+    howLink: 'So zählst du mit der Uhr',
+    bandsHint: 'Für Spieler ohne Smartwatch gibt es die Klikkr-Armbänder.',
+    bandsLink: 'Zu den Armbändern',
+    imageAlt:
+      'Klikkr-Scoreboard auf dem iPhone, daneben eine Apple Watch mit demselben Spielstand',
   },
 
   appFeatures: {
-    badge: 'Klikkr App',
-    title: 'Die kostenlose Klikkr App.',
-    description:
-      'Die kostenlose Klikkr App verwandelt deine Bluetooth-Armbänder in ein leistungsstarkes, intelligentes Scoreboard. Perfekt konzipiert für schnelle Racketsportarten wie Padel, Tennis und Squash.',
     downloadAppStore: 'Im App Store laden',
     downloadGooglePlay: 'Jetzt bei Google Play',
     scanQrLabel: 'Mit dem Smartphone scannen',
@@ -133,11 +117,11 @@ export const de: Translations = {
   },
 
   appStory: {
-    badge: 'Was die App kann',
+    badge: 'Die kostenlose Klikkr App',
     title: 'Klikkr zählt,',
     titleAccent: 'du spielst.',
     description:
-      'Fünf Dinge, die die App übernimmt, damit du dich nicht darum kümmern musst.',
+      'Die App ist kostenlos und verwandelt deine Klikkr in ein Scoreboard. Fünf Dinge, die sie übernimmt, damit du dich nicht darum kümmern musst.',
     sections: {
       modes: {
         tab: 'Modi',
@@ -294,6 +278,7 @@ export const de: Translations = {
     titleAccent: 'Bewertungen',
     description:
       'Höre von Athleten, die Klikkr bereits in ihren täglichen Matches nutzen.',
+    allLink: 'Alle Bewertungen',
     reviewsCount: 'Bewertungen',
     bottomCta:
       'Werde Teil der Community zufriedener Spieler – hol dir dein Klikkr noch heute.',
@@ -369,12 +354,12 @@ export const de: Translations = {
       {
         question: 'Wie wechsle ich die Batterie?',
         answer:
-          'Entferne zunächst den BLE Beacon vorsichtig aus dem Silikonarmband. Löse dann den Gehäusedeckel des Beacons mit einem flachen Gegenstand (z.B. einer Münze oder einem kleinen Schraubenzieher). Ersetze die Knopfzelle und setze den Deckel wieder auf.',
+          'Entferne zunächst den Klikkr vorsichtig aus dem Silikonarmband. Löse dann den Gehäusedeckel des Klikkr mit einem flachen Gegenstand (z.B. einer Münze oder einem kleinen Schraubenzieher). Ersetze die Knopfzelle und setze den Deckel wieder auf.',
       },
       {
-        question: 'Ist der BLE Beacon wasserdicht?',
+        question: 'Ist der Klikkr wasserdicht?',
         answer:
-          'Nein, der BLE Beacon selbst ist nicht wasserdicht und darf nicht unter Wasser verwendet werden. Das Silikonarmband ist zwar spritzwassergeschützt und schweissresistent, aber der elektronische Beacon sollte nicht mit Wasser in Berührung kommen.',
+          'Nein, der Klikkr selbst ist nicht wasserdicht und darf nicht unter Wasser verwendet werden. Das Silikonarmband ist zwar spritzwassergeschützt und schweissresistent, aber der Klikkr sollte nicht mit Wasser in Berührung kommen.',
       },
     ],
   },
@@ -471,11 +456,43 @@ export const de: Translations = {
     title: 'Wie willst du',
     titleAccent: 'spielen?',
     description:
-      'Ob mit oder ohne Beacon, alleine oder im Turnier — die Klikkr App passt sich deinem Setup an.',
+      'Mit Smartwatch, Armband oder ganz ohne, allein oder im Turnier — die Klikkr App passt sich deinem Setup an.',
     modes: {
+      smartwatch: {
+        label: 'Smartwatch',
+        description: 'Apple Watch oder Wear-OS-Uhr als Klikkr — ohne Armband.',
+        steps: [
+          {
+            title: 'App auf der Uhr öffnen',
+            description:
+              'Auf die Apple Watch kommt Klikkr mit der iPhone-App, auf eine Wear-OS-Uhr aus dem Play Store der Uhr. Öffne die App: Sie verbindet sich von selbst mit dem Handy und wartet auf ein Match.',
+          },
+          {
+            title: 'Match am Handy starten',
+            description:
+              'Sportart wählen, Spieler zuweisen, „Spiel starten“ tippen. Sobald das Match läuft, wechselt die Uhr zu den Spielern in ihren Farben. Eine Uhr reicht fürs ganze Match, auch im Doppel.',
+          },
+          {
+            title: 'Am Handgelenk zählen',
+            description:
+              'Oben stehen deine Initialen, im Doppel mit denen deines Partners, der Punkt davor zeigt, wer aufschlägt. Tipp oben zählt den Punkt für euch, Tipp unten für die Gegner. Den Spielstand siehst du auf dem Handy. Ein Doppeltipp nimmt den letzten Punkt zurück, langes Drücken pausiert und setzt fort.',
+          },
+          {
+            title: 'Ergebnis',
+            description:
+              'Nach dem Matchball steht das Ergebnis auf dem Handy und landet in der Statistik. Drei Matches mit der Uhr sind gratis, danach schaltest du sie in der Klikkr-App auf dem Handy einmalig für CHF 10 frei. Der Kauf gilt für deine Apple-ID bzw. dein Google-Konto, also für alle deine Uhren.',
+          },
+        ],
+        images: [
+          { src: '/app/de/screens/watch_idle.webp', bare: true as const },
+          '/app/de/screens/setup.webp',
+          { src: '/app/de/screens/watch_pair.webp', bare: true as const },
+          '/app/de/screens/summary.webp',
+        ],
+      },
       swipe: {
         label: 'Swipe',
-        description: 'Manuell auf dem Handy scoren — ganz ohne Beacon.',
+        description: 'Manuell auf dem Handy scoren — ganz ohne Klikkr.',
         steps: [
           {
             title: 'Sportart wählen',
@@ -506,55 +523,55 @@ export const de: Translations = {
         ],
       },
       oneBeacon: {
-        label: '1 Beacon',
-        description: 'Ein Wristband für beide Spieler — einfach und schnell.',
+        label: '1 Klikkr',
+        description: 'Ein Klikkr für beide Spieler — einfach und schnell.',
         steps: [
           {
-            title: 'Beacon verbinden',
+            title: 'Klikkr verbinden',
             description:
-              'Schalte dein Wristband ein (3 Sek. drücken) und verbinde es per QR-Code oder Bluetooth. Ein Beacon reicht.',
+              'Schalte deinen Klikkr ein (3 Sek. drücken) und verbinde ihn per QR-Code oder Bluetooth. Einer reicht.',
           },
           {
             title: 'Sportart wählen',
             description:
-              'Wähle deine Sportart aus — die App erkennt automatisch den 1-Beacon-Modus.',
+              'Wähle deine Sportart — die App erkennt automatisch, dass ein Klikkr verbunden ist.',
           },
           {
             title: 'Regeln einstellen',
             description:
-              'Konfiguriere Zielpunktzahl, "Win by 2" und weitere sportspezifische Einstellungen.',
+              'Lege Zielpunktzahl, „Win by 2“ und weitere Einstellungen deiner Sportart fest.',
           },
           {
             title: 'Klick & Score',
             description:
-              '1x Klick = Punkt für dich. 2x Klick = Punkt für den anderen Spieler. 3x Klick nimmt den letzten Punkt zurück, langes Drücken pausiert.',
+              '1x Klick = Punkt für dich. 2x Klick = Punkt für den Gegner. 3x Klick nimmt den letzten Punkt zurück, langes Drücken pausiert.',
           },
         ],
         images: [
-          '/app/de/screens/beacons.webp',
+          '/app/de/screens/beacons_one.webp',
           '/app/de/screens/home.webp',
           '/app/de/screens/rules.webp',
           '/app/de/screens/scoreboard.webp',
         ],
       },
       twoBeacons: {
-        label: '2 Beacons',
-        description: 'Jeder Spieler hat sein eigenes Wristband.',
+        label: '2 Klikkr',
+        description: 'Jeder Spieler hat seinen eigenen Klikkr.',
         steps: [
           {
-            title: 'Beide Beacons verbinden',
+            title: 'Beide Klikkr verbinden',
             description:
-              'Schalte beide Wristbands ein (3 Sek. drücken) und verbinde sie per QR-Code oder Bluetooth.',
+              'Schalte beide Klikkr ein (3 Sek. drücken) und verbinde sie per QR-Code oder Bluetooth.',
           },
           {
             title: 'Sportart wählen',
             description:
-              'Wähle deine Sportart — die App erkennt automatisch den 2-Beacon-Modus und weist jedem Beacon einen Spieler zu.',
+              'Wähle deine Sportart — die App erkennt automatisch die zwei Klikkr und weist jedem einen Spieler zu.',
           },
           {
             title: 'Regeln einstellen',
             description:
-              'Konfiguriere die sportspezifischen Einstellungen wie gewohnt.',
+              'Lege die Einstellungen deiner Sportart wie gewohnt fest.',
           },
           {
             title: 'Klick & Score',
@@ -571,25 +588,22 @@ export const de: Translations = {
       },
       tournament: {
         label: 'Turnier',
-        description: '3+ Beacons — mehrere Spieler, automatische Rangliste.',
+        description:
+          '3+ Klikkr — mehrere Spieler, automatischer Spielplan und Rangliste.',
         steps: [
           {
-            title: '3+ Beacons verbinden',
+            title: 'Klikkr verbinden',
             description:
-              'Verbinde 3 oder mehr Wristbands — die App erkennt automatisch den Turnier-Modus.',
-          },
-          {
-            title: 'Sportart wählen',
-            description: 'Wähle deine Sportart aus den verfügbaren Optionen.',
-          },
-          {
-            title: 'Regeln einstellen',
-            description: 'Konfiguriere die Turnier-spezifischen Einstellungen.',
+              'Verbinde 3 oder mehr Klikkr — die App erkennt automatisch den Turnier-Modus.',
           },
           {
             title: 'Spieler auswählen',
+            description: 'Wähle die Teilnehmer und die Sportart.',
+          },
+          {
+            title: 'Spielplan',
             description:
-              'Aktiviere oder deaktiviere Spieler mit einem Klick. Wähle vor jedem Match, wer gegeneinander antritt.',
+              'Im Round Robin spielt jeder gegen jeden. Der Spielplan zeigt gespielte Matches mit Ergebnis und welches als Nächstes dran ist.',
           },
           {
             title: 'Match spielen',
@@ -597,16 +611,15 @@ export const de: Translations = {
               'Beide Spieler klicken einmal, um das Match zu starten. Danach 1x Klick = eigener Punkt, 2x Klick nimmt zurück. Nach dem Match startet ein Klick das nächste.',
           },
           {
-            title: 'Turnier-Auswertung',
+            title: 'Auswertung',
             description:
-              'Nach jedem Match wird die Gesamtübersicht aktualisiert: Wer hat gegen wen gewonnen?',
+              'Nach jedem Match wird die Rangliste aktualisiert: Wer hat gegen wen gewonnen?',
           },
         ],
         images: [
-          '/app/de/screens/menu.webp',
-          '/app/de/screens/home.webp',
-          '/app/de/screens/rules.webp',
+          '/app/de/screens/beacons.webp',
           '/app/de/screens/setup.webp',
+          '/app/de/screens/tournament.webp',
           '/app/de/screens/scoreboard.webp',
           '/app/de/screens/summary.webp',
         ],

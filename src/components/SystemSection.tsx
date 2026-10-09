@@ -7,7 +7,7 @@ export function SystemSection({ lang = 'de' }: { lang?: Locale }) {
   const t = getTranslations(lang).system
 
   return (
-    <section className="w-full py-24 md:py-32 bg-zinc-950 border-t border-zinc-900 text-zinc-50">
+    <section className="w-full py-24 md:py-32 bg-zinc-900 border-t border-zinc-800 text-zinc-50">
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative overflow-hidden rounded-3xl border border-zinc-800 shadow-2xl aspect-[4/3]">
@@ -28,7 +28,9 @@ export function SystemSection({ lang = 'de' }: { lang?: Locale }) {
                   {t.titleAccent}
                 </span>
               </h2>
-              <p className="max-w-md text-zinc-400 md:text-lg">{t.description}</p>
+              <p className="max-w-md text-zinc-400 md:text-lg">
+                {t.description}
+              </p>
             </div>
 
             <ol className="space-y-6">
