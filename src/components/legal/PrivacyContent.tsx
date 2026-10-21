@@ -10,7 +10,7 @@ function PrivacyDe() {
         <p className="text-zinc-400">
           Verantwortliche Stelle: Wild Tec, Inhaber Andri Rafael Wild, Im
           Baumgarten 4, 6252 Dagmersellen, Schweiz, UID: CHE-386.932.040,
-          support@klikkr.ch. Stand: 16. Juli 2026
+          support@klikkr.ch. Stand: 21. Oktober 2026
         </p>
       </div>
 
@@ -146,7 +146,7 @@ function PrivacyDe() {
         <p className="leading-relaxed">
           Für Zugriffsstatistiken verwenden wir Umami, eine
           datenschutzfreundliche Analysesoftware, die wir selbst auf unserer
-          eigenen Infrastruktur (analytics.klikkr.ch) betreiben. Umami setzt
+          eigenen Infrastruktur (analytics.wild-tec.ch) betreiben. Umami setzt
           keine Cookies, erstellt keine personenbezogenen Tracking-Profile und
           speichert IP-Adressen nicht dauerhaft. Die erhobenen Statistiken sind
           anonymisiert und dienen rein der inhaltlichen Optimierung des
@@ -203,7 +203,7 @@ function PrivacyEn() {
         <p className="text-zinc-400">
           Controller: Wild Tec, owner Andri Rafael Wild, Im Baumgarten 4, 6252
           Dagmersellen, Switzerland, UID: CHE-386.932.040, support@klikkr.ch.
-          Last updated: July 16, 2026
+          Last updated: October 21, 2026
         </p>
       </div>
 
@@ -332,7 +332,7 @@ function PrivacyEn() {
         <p className="leading-relaxed">
           For access statistics we use Umami, a privacy-friendly analytics
           software that we operate ourselves on our own infrastructure
-          (analytics.klikkr.ch). Umami does not set cookies, does not create
+          (analytics.wild-tec.ch). Umami does not set cookies, does not create
           personal tracking profiles and does not permanently store IP
           addresses. The statistics collected are anonymised and serve solely to
           optimise the shop experience. This website does not use tracking
