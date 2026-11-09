@@ -4,7 +4,7 @@ import { AGB } from './AGB'
 import { Privacy } from './Privacy'
 import { Refunds } from './Refunds'
 import { NewsletterFooter } from './NewsletterForm'
-import { getTranslations, type Locale } from '../i18n'
+import { getLocalizedPath, getTranslations, type Locale } from '../i18n'
 import { track } from '../lib/analytics'
 
 export function Footer({
@@ -76,6 +76,13 @@ export function Footer({
             >
               {t.imprint}
             </button>
+            <a
+              href={getLocalizedPath('/app-terms', lang)}
+              onClick={() => track('footer-open-app-terms')}
+              className="hover:text-emerald-400 transition-colors"
+            >
+              {t.appTerms}
+            </a>
           </div>
         </div>
       </footer>

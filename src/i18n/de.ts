@@ -29,6 +29,11 @@ export const de: Translations = {
       description:
         'Datenschutzerklärung der Klikkr App. Erfahre, welche Daten die App erfasst und wie wir deine Privatsphäre schützen.',
     },
+    appTerms: {
+      title: 'Nutzungsbedingungen der Klikkr App | Klikkr',
+      description:
+        'Nutzungsbedingungen der Klikkr App: was gratis ist, was der Einmalkauf für die Smartwatch-Funktion umfasst und welche Regeln gelten.',
+    },
     imprint: {
       title: 'Impressum | Klikkr',
       description: 'Impressum und rechtliche Angaben zu Klikkr.',
@@ -434,6 +439,7 @@ export const de: Translations = {
     privacy: 'Datenschutz',
     refunds: 'Widerruf',
     imprint: 'Impressum',
+    appTerms: 'Nutzungsbedingungen App',
   },
 
   thanks: {
