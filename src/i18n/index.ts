@@ -31,6 +31,7 @@ export type PageKey =
   | 'reviews'
   | 'faq'
   | 'appPrivacy'
+  | 'appTerms'
   | 'imprint'
   | 'thanks'
 
@@ -40,6 +41,7 @@ export const pageAvailableLocales: Record<PageKey, Locale[]> = {
   reviews: ['de', 'en', 'fr', 'it'],
   faq: ['de', 'en', 'fr', 'it'],
   appPrivacy: ['de', 'en', 'fr', 'it'],
+  appTerms: ['de', 'en', 'fr', 'it'],
   imprint: ['de'],
   thanks: ['de', 'en', 'fr', 'it'],
 }

@@ -28,6 +28,11 @@ export const en: Translations = {
       description:
         'Privacy policy for the Klikkr app. Learn what data the app collects and how we protect your privacy.',
     },
+    appTerms: {
+      title: 'Klikkr App Terms of Use | Klikkr',
+      description:
+        'Terms of use for the Klikkr app: what is free, what the one-time purchase for the smartwatch feature includes and which rules apply.',
+    },
     imprint: {
       title: 'Imprint | Klikkr',
       description: 'Imprint and legal information for Klikkr.',
@@ -432,6 +437,7 @@ export const en: Translations = {
     privacy: 'Privacy',
     refunds: 'Refunds',
     imprint: 'Imprint',
+    appTerms: 'App Terms of Use',
   },
 
   thanks: {

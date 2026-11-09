@@ -29,6 +29,11 @@ export const fr: Translations = {
       description:
         "Politique de confidentialité de l'application Klikkr. Découvrez quelles données l'app collecte et comment nous protégeons votre vie privée.",
     },
+    appTerms: {
+      title: "Conditions d'utilisation de l'app Klikkr | Klikkr",
+      description:
+        "Conditions d'utilisation de l'application Klikkr : ce qui est gratuit, ce que comprend l'achat unique de la fonction montre connectée et les règles applicables.",
+    },
     imprint: {
       title: 'Mentions légales | Klikkr',
       description: 'Mentions légales et informations juridiques de Klikkr.',
@@ -439,6 +444,7 @@ export const fr: Translations = {
     privacy: 'Confidentialité',
     refunds: 'Rétractation',
     imprint: 'Mentions légales',
+    appTerms: "Conditions de l'app",
   },
 
   thanks: {
