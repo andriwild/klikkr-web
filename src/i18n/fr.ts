@@ -6,7 +6,7 @@ export const fr: Translations = {
     home: {
       title: 'Klikkr – Bracelet Compteur de Points pour Padel, Tennis & Squash',
       description:
-        "Le compteur de points Bluetooth au poignet. Comptez les points au padel, tennis ou squash en un clic. Étanche, 2 ans d'autonomie. Précommandez.",
+        "Le compteur de points Bluetooth au poignet. Comptez les points au padel, tennis ou squash en un clic. Ultra-léger, 2 ans d'autonomie. Précommandez.",
     },
     howItWorks: {
       title: 'Comment fonctionne Klikkr – Guide du bracelet compteur',
@@ -197,7 +197,7 @@ export const fr: Translations = {
       'Choisissez votre équipement et la quantité — un bracelet ou un set complet pour votre équipe.',
     featuresList: [
       'Comptage de points en un clic',
-      "Résistant à l'eau et à la transpiration",
+      'Bracelet en silicone résistant à la transpiration',
       'Toucher agréable — idéal pour le sport',
       'Ultra-léger au poignet',
       "2 ans d'autonomie",

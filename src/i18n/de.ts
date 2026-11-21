@@ -7,7 +7,7 @@ export const de: Translations = {
       title:
         'Klikkr – Punktezähler Armband für Padel, Tennis & Squash | Schweiz',
       description:
-        'Der Bluetooth-Punktezähler fürs Handgelenk. Tracke Punkte beim Padel, Tennis oder Squash mit einem Klick. Wasserfest, 2 Jahre Akku. Jetzt vorbestellen.',
+        'Der Bluetooth-Punktezähler fürs Handgelenk. Tracke Punkte beim Padel, Tennis oder Squash mit einem Klick. Ultraleicht, 2 Jahre Akku. Jetzt vorbestellen.',
     },
     howItWorks: {
       title: 'So funktioniert Klikkr – Punktezähler Armband | Anleitung',
@@ -193,7 +193,7 @@ export const de: Translations = {
       'Wähle deine Ausrüstung und Menge — ob ein Armband oder gleich ein ganzes Set für deine Crew.',
     featuresList: [
       'Punktzählung per Knopfdruck',
-      'Wasser- & schweissresistent',
+      'Schweissresistentes Silikonarmband',
       'Angenehme Haptik — ideal im Sport',
       'Ultraleicht am Handgelenk',
       '2 Jahre Batterielaufzeit',

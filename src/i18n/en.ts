@@ -6,7 +6,7 @@ export const en: Translations = {
     home: {
       title: 'Klikkr – Score Counter Wristband for Padel, Tennis & Squash',
       description:
-        'The Bluetooth score counter on your wrist. Track points in padel, tennis or squash with one click. Waterproof, 2-year battery. Pre-order now.',
+        'The Bluetooth score counter on your wrist. Track points in padel, tennis or squash with one click. Ultra-light, 2-year battery. Pre-order now.',
     },
     howItWorks: {
       title: 'How Klikkr Works – Score Counter Wristband Guide',
@@ -192,7 +192,7 @@ export const en: Translations = {
       'Choose your gear and quantity — whether one wristband or a full set for your crew.',
     featuresList: [
       'One-click score tracking',
-      'Water & sweat resistant',
+      'Sweat-resistant silicone band',
       'Great feel — perfect for sports',
       'Ultra-lightweight on the wrist',
       '2-year battery life',

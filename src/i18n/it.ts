@@ -6,7 +6,7 @@ export const it: Translations = {
     home: {
       title: 'Klikkr – Braccialetto Contapunti per Padel, Tennis & Squash',
       description:
-        'Il contapunti Bluetooth al polso. Conta i punti a padel, tennis o squash con un clic. Impermeabile, 2 anni di batteria. Preordina ora.',
+        'Il contapunti Bluetooth al polso. Conta i punti a padel, tennis o squash con un clic. Ultraleggero, 2 anni di batteria. Preordina ora.',
     },
     howItWorks: {
       title: 'Come funziona Klikkr – Guida al braccialetto contapunti',
@@ -198,7 +198,7 @@ export const it: Translations = {
       'Scegli la tua attrezzatura e la quantità — un braccialetto o un set completo per la tua squadra.',
     featuresList: [
       'Punteggio con un clic',
-      'Resistente ad acqua e sudore',
+      'Cinturino in silicone resistente al sudore',
       'Sensazione piacevole — ideale per lo sport',
       'Ultra-leggero al polso',
       '2 anni di autonomia',
