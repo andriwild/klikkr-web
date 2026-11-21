@@ -58,7 +58,7 @@ export const en: SportsLocale = {
           title: 'Deuce: advantage, golden point or star point',
           bullets: [
             'Advantage: as in tennis. After deuce, whoever wins two points in a row wins the game.',
-            'Golden point: at 40-40, one single point decides the game. The receiving team chooses whether to receive the serve on the right or on the left. This is the most common rule in casual and club play.',
+            'Golden point: at 40-40, one single point decides the game. The receiving team chooses whether to receive the serve on the right or on the left. In mixed matches, the player of the same gender as the server receives the serve. This is the most common rule in casual and club play.',
             'Star point: at 40-40, you first play with advantage. When the score goes back to deuce for the third time, one single point decides: the star point. Since the 2026 season, this is the standard at the major FIP professional tournaments.',
           ],
         },
@@ -129,7 +129,7 @@ export const en: SportsLocale = {
         },
         {
           q: 'What is the golden point in padel?',
-          a: 'At 40-40, one single point decides the game. The receiving team chooses the side on which it receives the serve.',
+          a: 'At 40-40, one single point decides the game. The receiving team chooses the side on which it receives the serve. In mixed matches, the player of the same gender as the server receives the serve.',
         },
         {
           q: 'What is the star point in padel?',
@@ -180,7 +180,7 @@ export const en: SportsLocale = {
       ],
       rulesTitle: 'How tennis scoring works',
       rulesIntro:
-        'The rules below follow the Rules of Tennis of the world governing body, the ITF.',
+        'The rules below follow the Rules of Tennis of the world governing body, the ITF. Since 2026, the federation has been called World Tennis.',
       rules: [
         {
           title: 'Points in a game',
@@ -238,7 +238,7 @@ export const en: SportsLocale = {
       variants: [
         {
           title: 'No advantage (no-ad)',
-          text: 'At 40-40, one single point decides. The receiver chooses the side. This makes games shorter.',
+          text: 'At 40-40, one single point decides. The receiver chooses the side. In mixed doubles, the player of the same gender as the server receives the serve. This makes games shorter.',
         },
         {
           title: 'One set',
@@ -276,8 +276,8 @@ export const en: SportsLocale = {
         },
       ],
       source: {
-        label: 'ITF, Rules of Tennis',
-        url: 'https://www.itftennis.com/en/about-us/governance/rules-and-regulations/',
+        label: 'World Tennis (ITF), Rules of Tennis',
+        url: 'https://www.world.tennis/en/about-us/governance/rules-and-regulations/',
       },
     },
 
@@ -336,8 +336,8 @@ export const en: SportsLocale = {
         {
           title: 'Let and stroke',
           paragraphs: [
-            'If your opponent interferes with your shot, you can ask for a let. With a let, you replay the rally.',
-            'You get a stroke if you could have hit a winning shot without the interference, or if your opponent did not try to get out of the way. Then you win the point.',
+            'If your opponent interferes with your shot, you can ask for a let. With a let, you replay the rally. You only get a let if you could have returned the ball.',
+            'You get a stroke if you could have hit a winning shot without the interference. You also get a stroke if you could have returned the ball and your opponent did not try to get out of the way. With a stroke, you win the point.',
           ],
         },
       ],
@@ -386,7 +386,7 @@ export const en: SportsLocale = {
       ],
       source: {
         label: 'World Squash, Rules of Singles Squash',
-        url: 'https://www.worldsquash.org/',
+        url: 'https://www.worldsquash.sport/',
       },
     },
 
@@ -457,7 +457,7 @@ export const en: SportsLocale = {
         {
           title: 'New from 2027: three games to 15 points',
           paragraphs: [
-            'The BWF approved a new scoring system in April 2026. From 4 January 2027, a game goes to 15 points instead of 21. At 14-14, you need a lead of 2 points. At 20-20, the next point decides. The interval and the change of ends in the third game then happen at 8 points.',
+            'The BWF approved a new scoring system in April 2026. From 4 January 2027, a game goes to 15 points instead of 21. At 14-14, you need a lead of 2 points. At 20-20, the next point decides. The interval then comes at 8 points in every game. In the third game, the players also change ends at 8 points.',
             'Until then, the 21-point system applies. Klikkr counts games to 21 and to 15 points.',
           ],
         },
@@ -639,7 +639,7 @@ export const en: SportsLocale = {
       seoDescription:
         'Pickleball scoring rules explained: side-out scoring, 0-0-2, serve, the kitchen and rally scoring. With Klikkr, you keep score with one click.',
       h1: 'Pickleball score counter: Klikkr keeps score of your match',
-      lead: 'In pickleball, the server calls three numbers before each serve, for example “4-2-1”. New players quickly lose track. With Klikkr, you click the wristband after each rally. The app counts with side-out scoring, with server 1 and server 2.',
+      lead: 'In pickleball doubles, the server calls three numbers before each serve, for example “4-2-1”. New players quickly lose track. With Klikkr, you click the wristband after each rally. The app counts with side-out scoring, with server 1 and server 2.',
       klikkrTitle: 'How Klikkr keeps score in pickleball',
       klikkrIntro:
         'Klikkr knows side-out scoring with server 1 and server 2, including the start at 0-0-2. Before the match, you choose side-out scoring or rally scoring, and how many points you play to.',
@@ -700,7 +700,7 @@ export const en: SportsLocale = {
         {
           title: 'Kitchen rule: the non-volley zone at the net',
           paragraphs: [
-            'The zone right next to the net is called the non-volley zone or the kitchen. It extends 7 feet, about 2.13 metres, from the net. If you stand in the kitchen, you may not hit the ball out of the air (volley).',
+            'The zone right next to the net is called the non-volley zone or the kitchen. It extends 7 feet, about 2.13 metres, from the net. If you stand in the kitchen or touch its line, you may not hit the ball out of the air (volley). If your momentum carries you into the kitchen after a volley, that is also a fault.',
           ],
         },
       ],
@@ -710,7 +710,7 @@ export const en: SportsLocale = {
       variants: [
         {
           title: 'Rally scoring',
-          text: 'Every rally scores a point, no matter who serves. USA Pickleball has allowed this scoring system as a provisional rule since 2025. Games then often go to 15 or 21 points.',
+          text: 'Every rally scores a point, no matter who serves. USA Pickleball allows this scoring system as a provisional rule: in singles since May 2024 and in doubles since 2025. Games then often go to 15 or 21 points.',
         },
         {
           title: 'One game instead of best of three',
@@ -736,11 +736,11 @@ export const en: SportsLocale = {
         },
         {
           q: 'What is the kitchen in pickleball?',
-          a: 'The zone right next to the net, about 2.13 metres deep. If you stand in it, you may not hit the ball out of the air (volley).',
+          a: 'The zone right next to the net, about 2.13 metres deep. If you stand in it or touch the line, you may not hit the ball out of the air (volley).',
         },
         {
           q: 'What is rally scoring in pickleball?',
-          a: 'Every rally scores a point, no matter who serves. USA Pickleball has allowed this as a provisional rule since 2025. Many official tournaments still use side-out scoring.',
+          a: 'Every rally scores a point, no matter who serves. USA Pickleball allows this as a provisional rule: in singles since 2024 and in doubles since 2025. Many official tournaments still use side-out scoring.',
         },
         {
           q: 'Is there a pickleball score counter for your wrist?',
@@ -749,7 +749,7 @@ export const en: SportsLocale = {
       ],
       source: {
         label: 'USA Pickleball, Official Rulebook',
-        url: 'https://usapickleball.org/what-is-pickleball/official-rules/',
+        url: 'https://usapickleball.org/rules/',
       },
     },
   },

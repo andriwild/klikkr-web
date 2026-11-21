@@ -58,7 +58,7 @@ export const de: SportsLocale = {
           title: 'Einstand: Vorteil, Golden Point oder Star Point',
           bullets: [
             'Vorteil: Wie im Tennis. Wer nach dem Einstand zwei Punkte hintereinander gewinnt, gewinnt das Spiel.',
-            'Golden Point: Bei 40:40 entscheidet ein einziger Punkt. Das empfangende Team wählt, ob es den Aufschlag rechts oder links annimmt. Im Hobby- und Vereinsspiel ist das die häufigste Regel.',
+            'Golden Point: Bei 40:40 entscheidet ein einziger Punkt. Das empfangende Team wählt, ob es den Aufschlag rechts oder links annimmt. Im Mixed nimmt der Spieler an, der das gleiche Geschlecht hat wie der Aufschläger. Im Hobby- und Vereinsspiel ist das die häufigste Regel.',
             'Star Point: Bei 40:40 wird zuerst mit Vorteil gespielt. Kommt es zum dritten Mal zum Einstand, entscheidet ein einziger Punkt, der Star Point. Seit der Saison 2026 ist das der Standard auf den grossen Profi-Turnieren der FIP.',
           ],
         },
@@ -129,7 +129,7 @@ export const de: SportsLocale = {
         },
         {
           q: 'Was ist der Golden Point beim Padel?',
-          a: 'Bei 40:40 entscheidet ein einziger Punkt über das Spiel. Das empfangende Team wählt die Seite, auf der es den Aufschlag annimmt.',
+          a: 'Bei 40:40 entscheidet ein einziger Punkt über das Spiel. Das empfangende Team wählt die Seite, auf der es den Aufschlag annimmt. Im Mixed nimmt der Spieler an, der das gleiche Geschlecht hat wie der Aufschläger.',
         },
         {
           q: 'Was ist der Star Point beim Padel?',
@@ -180,7 +180,7 @@ export const de: SportsLocale = {
       ],
       rulesTitle: 'Tennis-Zählweise: so wird gezählt',
       rulesIntro:
-        'Die Regeln unten folgen den Rules of Tennis des Weltverbands ITF.',
+        'Die Regeln unten folgen den Rules of Tennis des Weltverbands ITF. Der Verband heisst seit 2026 World Tennis.',
       rules: [
         {
           title: 'Punkte im Spiel',
@@ -238,7 +238,7 @@ export const de: SportsLocale = {
       variants: [
         {
           title: 'Ohne Vorteil (No-Ad)',
-          text: 'Bei 40:40 entscheidet ein einziger Punkt. Der Rückschläger wählt die Seite. Spiele werden so kürzer.',
+          text: 'Bei 40:40 entscheidet ein einziger Punkt. Der Rückschläger wählt die Seite. Im Mixed-Doppel nimmt der Spieler an, der das gleiche Geschlecht hat wie der Aufschläger. Spiele werden so kürzer.',
         },
         {
           title: 'Ein Satz',
@@ -276,8 +276,8 @@ export const de: SportsLocale = {
         },
       ],
       source: {
-        label: 'ITF, Rules of Tennis',
-        url: 'https://www.itftennis.com/en/about-us/governance/rules-and-regulations/',
+        label: 'World Tennis (ITF), Rules of Tennis',
+        url: 'https://www.world.tennis/en/about-us/governance/rules-and-regulations/',
       },
     },
 
@@ -336,8 +336,8 @@ export const de: SportsLocale = {
         {
           title: 'Let und Stroke',
           paragraphs: [
-            'Behindert dich der Gegner beim Schlag, kannst du einen Let verlangen. Bei einem Let wird der Ballwechsel wiederholt.',
-            'Hättest du ohne Behinderung einen Gewinnschlag machen können, oder hat der Gegner nicht versucht, Platz zu machen, gibt es einen Stroke. Dann bekommst du den Punkt.',
+            'Behindert dich der Gegner beim Schlag, kannst du einen Let verlangen. Bei einem Let wird der Ballwechsel wiederholt. Einen Let gibt es nur, wenn du den Ball hättest zurückspielen können.',
+            'Hättest du ohne Behinderung einen Gewinnschlag machen können, gibt es einen Stroke. Einen Stroke gibt es auch, wenn du den Ball hättest zurückspielen können und der Gegner nicht versucht hat, Platz zu machen. Bei einem Stroke bekommst du den Punkt.',
           ],
         },
       ],
@@ -386,7 +386,7 @@ export const de: SportsLocale = {
       ],
       source: {
         label: 'World Squash, Rules of Singles Squash',
-        url: 'https://www.worldsquash.org/',
+        url: 'https://www.worldsquash.sport/',
       },
     },
 
@@ -457,7 +457,7 @@ export const de: SportsLocale = {
         {
           title: 'Neu ab 2027: drei Sätze auf 15 Punkte',
           paragraphs: [
-            'Die BWF hat im April 2026 ein neues Zählsystem beschlossen. Ab dem 4. Januar 2027 geht ein Satz auf 15 Punkte statt auf 21. Bei 14:14 braucht es 2 Punkte Vorsprung, bei 20:20 entscheidet der nächste Punkt. Die Pause und der Seitenwechsel im dritten Satz sind dann bei 8 Punkten.',
+            'Die BWF hat im April 2026 ein neues Zählsystem beschlossen. Ab dem 4. Januar 2027 geht ein Satz auf 15 Punkte statt auf 21. Bei 14:14 braucht es 2 Punkte Vorsprung, bei 20:20 entscheidet der nächste Punkt. Die Pause ist dann in jedem Satz bei 8 Punkten. Im dritten Satz wechseln die Spieler bei 8 Punkten auch die Seite.',
             'Bis dahin gilt das System mit 21 Punkten. Klikkr zählt Sätze auf 21 und auf 15 Punkte.',
           ],
         },
@@ -639,7 +639,7 @@ export const de: SportsLocale = {
       seoDescription:
         'Pickleball-Regeln einfach erklärt: Side-out-Zählweise, 0-0-2, Aufschlag, Kitchen und Rally Scoring. Mit Klikkr zählst du per Klick.',
       h1: 'Pickleball-Punktezähler: Klikkr zählt dein Match',
-      lead: 'Beim Pickleball sagt der Aufschläger vor jedem Aufschlag drei Zahlen an, zum Beispiel «4-2-1». Wer neu spielt, verliert dabei schnell den Faden. Mit Klikkr klickst du nach jedem Ballwechsel auf das Armband. Die App zählt nach Side-out, mit Server 1 und Server 2.',
+      lead: 'Im Pickleball-Doppel sagt der Aufschläger vor jedem Aufschlag drei Zahlen an, zum Beispiel «4-2-1». Wer neu spielt, verliert dabei schnell den Faden. Mit Klikkr klickst du nach jedem Ballwechsel auf das Armband. Die App zählt nach Side-out, mit Server 1 und Server 2.',
       klikkrTitle: 'So zählt Klikkr beim Pickleball',
       klikkrIntro:
         'Klikkr kennt die Side-out-Zählweise mit Server 1 und Server 2, inklusive dem Start bei 0-0-2. Du wählst vor dem Match, ob ihr nach Side-out oder mit Rally Scoring spielt, und auf wie viele Punkte.',
@@ -700,7 +700,7 @@ export const de: SportsLocale = {
         {
           title: 'Kitchen: die Zone am Netz',
           paragraphs: [
-            'Die Zone direkt am Netz heisst Non-Volley Zone oder Kitchen. Sie reicht 7 Fuss, etwa 2,13 Meter, vom Netz. Wer in der Kitchen steht, darf den Ball nicht direkt aus der Luft spielen.',
+            'Die Zone direkt am Netz heisst Non-Volley Zone oder Kitchen. Sie reicht 7 Fuss, etwa 2,13 Meter, vom Netz. Wer in der Kitchen steht oder ihre Linie berührt, darf den Ball nicht direkt aus der Luft spielen. Trägt dich der Schwung nach einem Volley in die Kitchen, ist das ebenfalls ein Fehler.',
           ],
         },
       ],
@@ -710,7 +710,7 @@ export const de: SportsLocale = {
       variants: [
         {
           title: 'Rally Scoring',
-          text: 'Jeder Ballwechsel gibt einen Punkt, egal wer aufschlägt. USA Pickleball lässt diese Zählweise seit 2025 provisorisch zu. Oft wird dann auf 15 oder 21 Punkte gespielt.',
+          text: 'Jeder Ballwechsel gibt einen Punkt, egal wer aufschlägt. USA Pickleball lässt diese Zählweise provisorisch zu, im Einzel seit Mai 2024 und im Doppel seit 2025. Oft wird dann auf 15 oder 21 Punkte gespielt.',
         },
         {
           title: 'Ein Spiel statt zwei aus drei',
@@ -736,11 +736,11 @@ export const de: SportsLocale = {
         },
         {
           q: 'Was ist die Kitchen beim Pickleball?',
-          a: 'Die Zone direkt am Netz, etwa 2,13 Meter tief. Wer darin steht, darf den Ball nicht direkt aus der Luft spielen.',
+          a: 'Die Zone direkt am Netz, etwa 2,13 Meter tief. Wer darin steht oder die Linie berührt, darf den Ball nicht direkt aus der Luft spielen.',
         },
         {
           q: 'Was ist Rally Scoring beim Pickleball?',
-          a: 'Jeder Ballwechsel gibt einen Punkt, egal wer aufschlägt. USA Pickleball lässt das seit 2025 provisorisch zu, in vielen offiziellen Turnieren gilt aber weiter Side-out.',
+          a: 'Jeder Ballwechsel gibt einen Punkt, egal wer aufschlägt. USA Pickleball lässt das provisorisch zu, im Einzel seit 2024 und im Doppel seit 2025. In vielen offiziellen Turnieren gilt aber weiter Side-out.',
         },
         {
           q: 'Gibt es einen Pickleball-Zähler für das Handgelenk?',
@@ -749,7 +749,7 @@ export const de: SportsLocale = {
       ],
       source: {
         label: 'USA Pickleball, Official Rulebook',
-        url: 'https://usapickleball.org/what-is-pickleball/official-rules/',
+        url: 'https://usapickleball.org/rules/',
       },
     },
   },
