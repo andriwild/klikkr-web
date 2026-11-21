@@ -431,6 +431,7 @@ export const en: Translations = {
   },
 
   footer: {
+    sports: 'Sports',
     allRightsReserved: 'All rights reserved.',
     designBy: 'Design & Code by',
     agb: 'Terms',

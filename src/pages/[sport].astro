@@ -1,0 +1,12 @@
+---
+import SportPage from '../components/sports/SportPage.astro';
+import { sportStaticPaths } from '../data/sports';
+
+export function getStaticPaths() {
+  return sportStaticPaths('de');
+}
+
+const { id } = Astro.props;
+---
+
+<SportPage id={id} lang="de" />

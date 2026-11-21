@@ -433,6 +433,7 @@ export const de: Translations = {
   },
 
   footer: {
+    sports: 'Sportarten',
     allRightsReserved: 'Alle Rechte vorbehalten.',
     designBy: 'Design & Code by',
     agb: 'AGB',

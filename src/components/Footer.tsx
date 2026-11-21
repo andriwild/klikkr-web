@@ -6,6 +6,7 @@ import { Refunds } from './Refunds'
 import { NewsletterFooter } from './NewsletterForm'
 import { getLocalizedPath, getTranslations, type Locale } from '../i18n'
 import { track } from '../lib/analytics'
+import { sportOrder, sportPath, type SportId } from '../data/sports/slugs'
 
 export function Footer({
   lang = 'de',
@@ -15,6 +16,15 @@ export function Footer({
   showNewsletter?: boolean
 }) {
   const t = getTranslations(lang).footer
+  const hero = getTranslations(lang).hero
+  const sportNames: Record<SportId, string> = {
+    padel: hero.sportPadel,
+    tennis: hero.sportTennis,
+    squash: hero.sportSquash,
+    badminton: hero.sportBadminton,
+    tableTennis: hero.sportTableTennis,
+    pickleball: hero.sportPickleball,
+  }
   const [showImprint, setShowImprint] = useState(false)
   const [showAGB, setShowAGB] = useState(false)
   const [showPrivacy, setShowPrivacy] = useState(false)
@@ -24,6 +34,21 @@ export function Footer({
     <>
       <footer className="w-full border-t border-zinc-900 bg-zinc-950 relative z-10">
         {showNewsletter && <NewsletterFooter lang={lang} />}
+        <nav
+          aria-label={t.sports}
+          className="container mx-auto px-4 md:px-6 pt-8 pb-6 flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-2 text-sm text-zinc-500"
+        >
+          <span className="font-semibold text-zinc-400">{t.sports}</span>
+          {sportOrder.map((id) => (
+            <a
+              key={id}
+              href={sportPath(id, lang)}
+              className="hover:text-emerald-400 transition-colors"
+            >
+              {sportNames[id]}
+            </a>
+          ))}
+        </nav>
         <div className="container mx-auto px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between text-sm text-zinc-500">
           <div className="flex flex-col items-center sm:items-start gap-1">
             <p>

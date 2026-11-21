@@ -439,6 +439,7 @@ export const it: Translations = {
   },
 
   footer: {
+    sports: 'Sport',
     allRightsReserved: 'Tutti i diritti riservati.',
     designBy: 'Design & Code di',
     agb: 'CGC',

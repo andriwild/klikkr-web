@@ -3,7 +3,6 @@ import '../index.css';
 import {
   getTranslations,
   getLocalizedPath,
-  getCanonicalUrl,
   locales,
   localeLabels,
   hreflangMap,
@@ -23,6 +22,12 @@ interface Props {
   currentPage?: string;
   lang?: Locale;
   noindex?: boolean;
+  /**
+   * Path of this page per language, for pages whose slug differs between
+   * languages (e.g. /tischtennis/ and /en/table-tennis/). Without it, the
+   * other languages use the same path with a different prefix.
+   */
+  alternatePaths?: Partial<Record<Locale, string>>;
 }
 
 const {
@@ -33,6 +38,7 @@ const {
   currentPage = 'home',
   lang = 'de',
   noindex = false,
+  alternatePaths,
 } = Astro.props;
 const t = getTranslations(lang);
 
@@ -53,9 +59,17 @@ const currentPathWithoutLang = Astro.url.pathname
   .replace(/^\/(en|fr|it)(\/|$)/, '/')
   .replace(/\/$/, '') || '/';
 
-const canonicalUrl = getCanonicalUrl(currentPathWithoutLang, lang);
+const pathFor = (loc: Locale): string =>
+  alternatePaths?.[loc] ?? getLocalizedPath(currentPathWithoutLang, loc);
+const urlFor = (loc: Locale): string => `${SITE_URL}${pathFor(loc)}`;
 
-const alternateLocales = pageKey ? pageAvailableLocales[pageKey] : locales;
+const canonicalUrl = urlFor(lang);
+
+const alternateLocales = alternatePaths
+  ? locales.filter((loc) => alternatePaths[loc])
+  : pageKey
+    ? pageAvailableLocales[pageKey]
+    : locales;
 const xDefaultLocale: Locale = alternateLocales.includes('de') ? 'de' : alternateLocales[0];
 ---
 
@@ -93,10 +107,10 @@ const xDefaultLocale: Locale = alternateLocales.includes('de') ? 'de' : alternat
       <link
         rel="alternate"
         hreflang={hreflangMap[loc]}
-        href={getCanonicalUrl(currentPathWithoutLang, loc)}
+        href={urlFor(loc)}
       />
     ))}
-    <link rel="alternate" hreflang="x-default" href={getCanonicalUrl(currentPathWithoutLang, xDefaultLocale)} />
+    <link rel="alternate" hreflang="x-default" href={urlFor(xDefaultLocale)} />
 
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
@@ -193,7 +207,7 @@ const xDefaultLocale: Locale = alternateLocales.includes('de') ? 'de' : alternat
             <div class="absolute left-0 top-full mt-1 py-1 flex flex-col bg-zinc-900 border border-zinc-800 rounded-xl shadow-2xl min-w-[120px] z-50">
               {locales.map((loc) => (
                 <a
-                  href={getLocalizedPath(currentPathWithoutLang, loc)}
+                  href={pathFor(loc)}
                   class:list={[
                     'block px-4 py-2 text-sm font-semibold transition-colors whitespace-nowrap',
                     loc === lang
