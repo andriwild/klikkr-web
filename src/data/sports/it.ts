@@ -58,7 +58,7 @@ export const it: SportsLocale = {
           title: 'Parità: vantaggi, golden point o star point',
           bullets: [
             'Vantaggi: come nel tennis. Chi dopo la parità vince due punti di fila vince il game.',
-            "Golden point (punto d'oro): sul 40-40 decide un solo punto. La coppia in risposta sceglie se ricevere il servizio a destra o a sinistra. Nel gioco amatoriale e nei circoli è la regola più diffusa.",
+            "Golden point (punto d'oro): sul 40-40 decide un solo punto. La coppia in risposta sceglie se ricevere il servizio a destra o a sinistra. Nel misto riceve il giocatore dello stesso sesso di chi serve. Nel gioco amatoriale e nei circoli è la regola più diffusa.",
             'Star point: sul 40-40 si gioca prima con i vantaggi. Se si arriva alla parità per la terza volta, decide un solo punto: lo star point. Dalla stagione 2026 è la regola standard nei grandi tornei professionistici della FIP.',
           ],
         },
@@ -129,7 +129,7 @@ export const it: SportsLocale = {
         },
         {
           q: "Cos'è il golden point nel padel?",
-          a: 'Sul 40-40 un solo punto decide il game. La coppia in risposta sceglie il lato da cui ricevere il servizio.',
+          a: 'Sul 40-40 un solo punto decide il game. La coppia in risposta sceglie il lato da cui ricevere il servizio. Nel misto riceve il giocatore dello stesso sesso di chi serve.',
         },
         {
           q: "Cos'è lo star point nel padel?",
@@ -180,7 +180,7 @@ export const it: SportsLocale = {
       ],
       rulesTitle: 'Come si contano i punti nel tennis',
       rulesIntro:
-        "Le regole qui sotto seguono le Rules of Tennis dell'ITF, la federazione mondiale.",
+        "Le regole qui sotto seguono le Rules of Tennis dell'ITF, la federazione mondiale. Dal 2026 la federazione si chiama World Tennis.",
       rules: [
         {
           title: 'I punti in un game',
@@ -238,7 +238,7 @@ export const it: SportsLocale = {
       variants: [
         {
           title: 'Senza vantaggi (no-ad o killer point)',
-          text: 'Sul 40-40 decide un solo punto. Chi risponde sceglie il lato. Così i game sono più corti.',
+          text: 'Sul 40-40 decide un solo punto. Chi risponde sceglie il lato. Nel doppio misto risponde il giocatore dello stesso sesso di chi serve. Così i game sono più corti.',
         },
         {
           title: 'Un set',
@@ -276,8 +276,8 @@ export const it: SportsLocale = {
         },
       ],
       source: {
-        label: 'ITF, Rules of Tennis',
-        url: 'https://www.itftennis.com/en/about-us/governance/rules-and-regulations/',
+        label: 'World Tennis (ITF), Rules of Tennis',
+        url: 'https://www.world.tennis/en/about-us/governance/rules-and-regulations/',
       },
     },
 
@@ -336,8 +336,8 @@ export const it: SportsLocale = {
         {
           title: 'Let e stroke',
           paragraphs: [
-            "Se l'avversario ti ostacola nel colpo, puoi chiedere un let. Con un let lo scambio si ripete.",
-            "Se senza ostacolo avresti fatto un colpo vincente, o se l'avversario non ha cercato di farti spazio, c'è uno stroke. Allora il punto è tuo.",
+            "Se l'avversario ti ostacola nel colpo, puoi chiedere un let. Con un let lo scambio si ripete. C'è un let solo se avresti potuto ribattere la palla.",
+            "Se senza ostacolo avresti fatto un colpo vincente, c'è uno stroke. C'è uno stroke anche se avresti potuto ribattere la palla e l'avversario non ha cercato di farti spazio. Con uno stroke il punto è tuo.",
           ],
         },
       ],
@@ -386,7 +386,7 @@ export const it: SportsLocale = {
       ],
       source: {
         label: 'World Squash, Rules of Singles Squash',
-        url: 'https://www.worldsquash.org/',
+        url: 'https://www.worldsquash.sport/',
       },
     },
 
@@ -457,7 +457,7 @@ export const it: SportsLocale = {
         {
           title: 'Novità dal 2027: tre set a 15 punti',
           paragraphs: [
-            'Ad aprile 2026 la BWF ha approvato un nuovo sistema di punteggio. Dal 4 gennaio 2027 un set si gioca a 15 punti invece che a 21. Sul 14-14 servono 2 punti di scarto, sul 20-20 decide il punto successivo. La pausa e il cambio di campo nel terzo set arrivano allora a 8 punti.',
+            'Ad aprile 2026 la BWF ha approvato un nuovo sistema di punteggio. Dal 4 gennaio 2027 un set si gioca a 15 punti invece che a 21. Sul 14-14 servono 2 punti di scarto, sul 20-20 decide il punto successivo. La pausa è allora a 8 punti in ogni set. Nel terzo set i giocatori cambiano campo anche quando si arriva a 8 punti.',
             'Fino ad allora vale il sistema a 21 punti. Klikkr conta set a 21 e a 15 punti.',
           ],
         },
@@ -639,7 +639,7 @@ export const it: SportsLocale = {
       seoDescription:
         'Regole del pickleball in parole semplici: side out, 0-0-2, servizio, kitchen e rally scoring. Con Klikkr conti i punti con un clic al polso.',
       h1: 'Contapunti pickleball: Klikkr conta la tua partita',
-      lead: "Nel pickleball chi serve annuncia tre numeri prima di ogni servizio, per esempio «4-2-1». Chi gioca da poco perde presto il filo. Con Klikkr fai clic sul braccialetto dopo ogni scambio. L'app conta con il side out, dove fa punto solo chi serve, e con server 1 e server 2, cioè primo e secondo battitore.",
+      lead: "Nel doppio di pickleball chi serve annuncia tre numeri prima di ogni servizio, per esempio «4-2-1». Chi gioca da poco perde presto il filo. Con Klikkr fai clic sul braccialetto dopo ogni scambio. L'app conta con il side out, dove fa punto solo chi serve, e con server 1 e server 2, cioè primo e secondo battitore.",
       klikkrTitle: 'Come conta Klikkr nel pickleball',
       klikkrIntro:
         "Klikkr conosce il punteggio side out con server 1 e server 2, compreso l'inizio sullo 0-0-2. Prima della partita scegli se giocate con il side out o con il rally scoring, dove ogni scambio vale un punto, e a quanti punti.",
@@ -700,7 +700,7 @@ export const it: SportsLocale = {
         {
           title: 'Kitchen: la zona di non volée',
           paragraphs: [
-            'La zona a ridosso della rete si chiama zona di non volée (non-volley zone) o kitchen. Si estende per 7 piedi dalla rete, circa 2,13 metri. Chi sta nella kitchen non può giocare la palla al volo.',
+            'La zona a ridosso della rete si chiama zona di non volée (non-volley zone) o kitchen. Si estende per 7 piedi dalla rete, circa 2,13 metri. Chi sta nella kitchen o ne tocca la linea non può giocare la palla al volo. È fallo anche se dopo una volée lo slancio ti porta nella kitchen.',
           ],
         },
       ],
@@ -710,7 +710,7 @@ export const it: SportsLocale = {
       variants: [
         {
           title: 'Rally scoring',
-          text: 'Ogni scambio vale un punto, non importa chi serve. USA Pickleball ammette questo sistema in via provvisoria dal 2025. Spesso si gioca allora a 15 o 21 punti.',
+          text: 'Ogni scambio vale un punto, non importa chi serve. USA Pickleball ammette questo sistema in via provvisoria: nel singolo da maggio 2024, nel doppio dal 2025. Spesso si gioca allora a 15 o 21 punti.',
         },
         {
           title: 'Un game invece di due su tre',
@@ -736,11 +736,11 @@ export const it: SportsLocale = {
         },
         {
           q: "Cos'è la kitchen nel pickleball?",
-          a: 'È la zona a ridosso della rete, profonda circa 2,13 metri. Chi ci sta dentro non può giocare la palla al volo.',
+          a: 'È la zona a ridosso della rete, profonda circa 2,13 metri. Chi ci sta dentro o ne tocca la linea non può giocare la palla al volo.',
         },
         {
           q: "Cos'è il rally scoring nel pickleball?",
-          a: 'Ogni scambio vale un punto, non importa chi serve. USA Pickleball lo ammette in via provvisoria dal 2025, ma in molti tornei ufficiali vale ancora il side out.',
+          a: 'Ogni scambio vale un punto, non importa chi serve. USA Pickleball lo ammette in via provvisoria: nel singolo dal 2024, nel doppio dal 2025. In molti tornei ufficiali però vale ancora il side out.',
         },
         {
           q: 'Esiste un contapunti da polso per il pickleball?',
@@ -749,7 +749,7 @@ export const it: SportsLocale = {
       ],
       source: {
         label: 'USA Pickleball, Official Rulebook',
-        url: 'https://usapickleball.org/what-is-pickleball/official-rules/',
+        url: 'https://usapickleball.org/rules/',
       },
     },
   },
