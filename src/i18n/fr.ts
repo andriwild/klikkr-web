@@ -438,6 +438,7 @@ export const fr: Translations = {
   },
 
   footer: {
+    sports: 'Sports',
     allRightsReserved: 'Tous droits réservés.',
     designBy: 'Design & Code par',
     agb: 'CGV',

@@ -4,6 +4,7 @@ import { Button } from './ui/button'
 import LightRays from './LightRays'
 import { getTranslations, type Locale } from '../i18n'
 import { track } from '../lib/analytics'
+import { sportPath, type SportId } from '../data/sports/slugs'
 
 const PERSON_SHIFT =
   'translate-x-[8%] sm:translate-x-[12%] lg:translate-x-[16%]'
@@ -51,13 +52,13 @@ export function HeroSection({ lang = 'de' }: { lang?: Locale }) {
     return () => clearInterval(id)
   }, [])
 
-  const sports = [
-    t.sportPadel,
-    t.sportSquash,
-    t.sportBadminton,
-    t.sportTennis,
-    t.sportTableTennis,
-    t.sportPickleball,
+  const sports: { id: SportId; label: string }[] = [
+    { id: 'padel', label: t.sportPadel },
+    { id: 'squash', label: t.sportSquash },
+    { id: 'badminton', label: t.sportBadminton },
+    { id: 'tennis', label: t.sportTennis },
+    { id: 'tableTennis', label: t.sportTableTennis },
+    { id: 'pickleball', label: t.sportPickleball },
   ]
 
   return (
@@ -187,8 +188,13 @@ export function HeroSection({ lang = 'de' }: { lang?: Locale }) {
 
           <div className="flex flex-wrap items-center gap-y-2 pt-4 text-xs font-bold uppercase tracking-[0.22em] text-zinc-300/90">
             {sports.map((sport, i) => (
-              <span key={sport} className="flex items-center">
-                {sport}
+              <span key={sport.id} className="flex items-center">
+                <a
+                  href={sportPath(sport.id, lang)}
+                  className="hover:text-emerald-400 transition-colors"
+                >
+                  {sport.label}
+                </a>
                 {i < sports.length - 1 && (
                   <span className="mx-3 h-1 w-1 rounded-full bg-zinc-500" />
                 )}
